@@ -3,6 +3,8 @@ package com.labs.targa.auth.security.configuration;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -53,6 +55,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 		.addFilter(new JwtAuthorizationFilter(authenticationManager(),  this.userRepository))
 		.authorizeRequests()
 				.antMatchers(HttpMethod.POST, "/login").permitAll()
+				.antMatchers(HttpMethod.GET, "/api/products").authenticated()
 				.antMatchers(HttpMethod.GET, "/jwt/currentUser").authenticated()
 				.antMatchers(HttpMethod.GET, "/jwt/test").authenticated()
 

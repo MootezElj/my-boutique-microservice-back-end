@@ -12,9 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableFeignClients
 public class CustomerServiceApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(CustomerServiceApplication.class, args);
 	}
-
 }

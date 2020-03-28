@@ -5,6 +5,7 @@ import com.targa.labs.myBoutique.product.domain.Category;
 import com.targa.labs.myBoutique.product.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.Collections;
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 @Transactional
 @Slf4j
 public class CategoryService {
+	@Autowired
 	private final CategoryRepository categoryRepository;
 
 	public List<CategoryDto> findAll(){
@@ -35,10 +37,7 @@ public class CategoryService {
 		return mapToDto(this.categoryRepository.save(
 				new Category(
 						categoryDto.getName(),
-						categoryDto.getDescription(),
-						Collections.emptySet()
-						)
-				));
+						categoryDto.getDescription())));
 	}
 
 
@@ -52,10 +51,7 @@ public class CategoryService {
 			return new CategoryDto(
 					category.getId(),
 					category.getName(),
-					category.getDescription(),
-					category.getProducts().stream().map(ProductService::mapToDto)
-					.collect(Collectors.toSet())
-					);
+					category.getDescription());
 		}
 		return null;
 	}

@@ -52,4 +52,16 @@ public class Product extends AbstractEntity {
 	@ManyToOne
 	private Category category;
 
+	private String image;
+
+	public Product(@NotNull String name, @NotNull String description, @NotNull BigDecimal price, Integer quantity, @NotNull ProductStatus status, Integer salesCounter, Set<Review> reviews, String image) {
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.quantity = quantity;
+		this.status = status;
+		this.salesCounter = salesCounter;
+		this.reviews = reviews;
+		this.image = image;
+	}
 }

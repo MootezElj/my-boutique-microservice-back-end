@@ -1,5 +1,6 @@
 server:
-  port: 9994
+  port: 9101
+
 spring:
   datasource:
     password:
@@ -15,5 +16,19 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
     show-sql: true
-  main:
-    allow-bean-definition-overriding=true:
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+zuul:
+  prefix: /api
+  routes:
+    middleware:
+      path: /products/**
+      url: http://localhost:9990/api/products

@@ -28,8 +28,5 @@ public class Category extends AbstractEntity {
 	@NotNull
 	@Column(name = "description", nullable = false)
 	private String description;
-	
-	@OneToMany(mappedBy = "category")
-	@JsonIgnore
-	private Set<Product> products = new HashSet<>();
+
 }

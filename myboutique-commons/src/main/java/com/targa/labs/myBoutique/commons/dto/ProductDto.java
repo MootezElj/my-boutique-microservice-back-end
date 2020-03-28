@@ -20,4 +20,5 @@ public class ProductDto {
 	private Integer salesCounter;
 	private Set<ReviewDto> reviews;
 	private CategoryDto category;
+	private String image;
 }
