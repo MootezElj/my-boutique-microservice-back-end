@@ -15,10 +15,17 @@ public class ProductDto {
 	private String name;
 	private String description;
 	private BigDecimal price;
+	private Integer discount;
+	private BigDecimal priceBeforeDiscount;
 	private Integer quantity;
 	private String status;
 	private Integer salesCounter;
 	private Set<ReviewDto> reviews;
 	private CategoryDto category;
-	private String image;
+	private String image1;
+	private String image2;
+	private String image3;
+	private String image4;
+
+
 }

@@ -2,68 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b037c49-26ae-48e9-9d7a-61d49e990623" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/configuration/ServiceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0_pr1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_annotations_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_2_0_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/customer-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/customer-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/discovery-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/discovery-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/product-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/CustomerServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/CustomerServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../customer-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../discovery-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../discovery-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/JwtServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/JwtServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/JwtAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/JwtProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/JwtProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/UserPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/model/LoginViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/model/LoginViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/service/UserPrincipalDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/service/UserPrincipalDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/web/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/web/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jwt-service/src/test/java/com/labs/targa/auth/JwtServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jwt-discovery-service/src/test/java/com/labs/targa/auth/JwtServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/domain/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/domain/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/DepartmentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/DepartmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/DepartmentResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CategoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CategoryDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_targa_labs_myBoutique_myboutique_commons_0_0_1_SNAPSHOT.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_4_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Category.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/CategoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/CategoryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../product-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/CategoryResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/CategoryResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../config-server/target/" />
@@ -89,22 +45,62 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Product.java">
+        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/DepartmentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="147">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
-                <element signature="e#1196#1204#0" expanded="true" />
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/domain/AbstractEntity.java">
+        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state relative-caret-position="469">
+              <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ProductRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ReviewRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -120,7 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>c</find>
       <find>eur</find>
       <find>maven-plu</find>
       <find>dataSource</find>
@@ -150,7 +145,12 @@
       <find>zuul</find>
       <find>connect</find>
       <find>TESNCAGCA</find>
+      <find>find</find>
     </findStrings>
+    <replaceStrings>
+      <replace>Women</replace>
+      <replace>Pant</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>E:\projects\workspaces\my-boutique-workspace\my-boutique-microservice-back-end\jwt-discovery-service</dir>
     </dirStrings>
@@ -161,14 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../auth-service/src/main/resources/startup.properties" />
-        <option value="$PROJECT_DIR$/../auth-service/src/main/java/com/targa/labs/myBoutique/auth/configuration/StartupProperties.java" />
-        <option value="$PROJECT_DIR$/../auth-service/src/main/java/com/targa/labs/myBoutique/auth/configuration/startup.properties" />
-        <option value="$PROJECT_DIR$/../auth-service/src/main/java/com/targa/labs/myBoutique/auth/configuration/ApplicationStartUp.java" />
-        <option value="$PROJECT_DIR$/../auth-service/src/main/java/com/targa/labs/myBoutique/auth/domain/User.java" />
-        <option value="$PROJECT_DIR$/../auth-service/src/main/java/com/targa/labs/myBoutique/auth/web/AuthResources.java" />
-        <option value="$PROJECT_DIR$/../jwt-service/src/main/resources/bootstrap.yaml" />
-        <option value="$PROJECT_DIR$/../jwt-service/src/main/resources/boostrapt.yml" />
         <option value="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/configuration/ApplicationStartUp.java" />
         <option value="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/configuration/MyConfiguration.java" />
         <option value="$PROJECT_DIR$/../jwt-service/src/main/java/com/labs/targa/auth/security/configuration/EurekaConfig.java" />
@@ -198,19 +190,28 @@
         <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/JwtServiceApplication.java" />
         <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/configuration/SecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ProductDto.java" />
         <option value="$PROJECT_DIR$/../jwt-discovery-service/pom.xml" />
         <option value="$PROJECT_DIR$/../product-service/pom.xml" />
         <option value="$PROJECT_DIR$/../config-server/src/main/resources/configurations/product-service.yml" />
-        <option value="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ProductRepository.java" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CategoryDto.java" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Category.java" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/CategoryService.java" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Product.java" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java" />
         <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/domain/AbstractEntity.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ProductRepository.java" />
+        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CategoryDto.java" />
+        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/DepartmentDto.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Category.java" />
+        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ProductDto.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Department.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Product.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/DepartmentRepository.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/CategoryRepository.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/CategoryResource.java" />
+        <option value="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/DepartmentResource.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/Test.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/DepartmentService.java" />
+        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java" />
       </list>
     </option>
   </component>
@@ -249,41 +250,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="configurations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
               <item name="product-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -302,14 +275,39 @@
               <item name="product-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myBoutique" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myBoutique" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myboutique-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="product-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="myBoutique" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,7 +354,7 @@
     </option>
     <option name="contentProportion" value="0.20833333" />
   </component>
-  <component name="RunManager" selected="JUnit.All in product-service">
+  <component name="RunManager" selected="Spring Boot.JwtServiceApplication">
     <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.ProductServiceApplication" />
       <module name="product-service" />
@@ -366,14 +364,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in jwt-discovery-service (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jwt-discovery-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -428,8 +418,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="JwtServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="jwt-discovery-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labs.targa.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.labs.targa.auth.JwtServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -444,23 +440,22 @@
     </configuration>
     <list>
       <item itemvalue="Application.ProductServiceApplication" />
-      <item itemvalue="JUnit.All in jwt-discovery-service (1)" />
       <item itemvalue="JUnit.All in jwt-discovery-service (2)" />
+      <item itemvalue="JUnit.All in product-service" />
       <item itemvalue="Spring Boot.AuthServiceApplication" />
       <item itemvalue="Spring Boot.CustomerServiceApplication" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
-      <item itemvalue="Spring Boot.JwtServiceApplication" />
       <item itemvalue="Spring Boot.ProductServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
-      <item itemvalue="JUnit.All in product-service" />
+      <item itemvalue="Spring Boot.JwtServiceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in product-service" />
+        <item itemvalue="Spring Boot.JwtServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="JUnit.All in product-service" />
         <item itemvalue="Application.ProductServiceApplication" />
         <item itemvalue="JUnit.All in jwt-discovery-service (2)" />
-        <item itemvalue="JUnit.All in jwt-discovery-service (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +496,11 @@
       <workItem from="1585253226743" duration="3264000" />
       <workItem from="1585265543158" duration="830000" />
       <workItem from="1585333105824" duration="10290000" />
-      <workItem from="1585414649963" duration="5210000" />
+      <workItem from="1585414649963" duration="8084000" />
+      <workItem from="1585434039299" duration="697000" />
+      <workItem from="1585439762255" duration="2516000" />
+      <workItem from="1585446725480" duration="1532000" />
+      <workItem from="1585500981086" duration="10958000" />
     </task>
     <servers />
   </component>
@@ -538,10 +537,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80661000" />
+    <option name="totallyTimeSpent" value="99238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
@@ -550,7 +550,7 @@
       <window_info id="Favorites" order="4" sideWeight="0.5050676" side_tool="true" weight="0.25053304" />
       <window_info id="Learn" order="5" />
       <window_info id="Web" order="6" sideWeight="0.5050676" side_tool="true" weight="0.25053304" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49493244" visible="true" weight="0.5687633" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49493244" weight="0.29850745" />
       <window_info id="Structure" order="8" sideWeight="0.5050676" side_tool="true" weight="0.25053304" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -560,7 +560,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.3290461" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run Dashboard" order="8" sideWeight="0.9056503" visible="true" weight="0.301179" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="8" sideWeight="0.9056503" visible="true" weight="0.30760986" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.18435155" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
@@ -579,6 +579,43 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.5050676" side_tool="true" weight="0.25053304" />
+      <window_info id="Learn" order="5" />
+      <window_info id="Web" order="6" sideWeight="0.5050676" side_tool="true" weight="0.25053304" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49493244" visible="true" weight="0.29850745" />
+      <window_info id="Structure" order="8" sideWeight="0.5050676" side_tool="true" weight="0.25053304" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.09434968" side_tool="true" weight="0.3772776" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.4989339" weight="0.3290461" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.3290461" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290461" />
+      <window_info anchor="bottom" id="Run Dashboard" order="8" sideWeight="0.9056503" visible="true" weight="0.30760986" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.18435155" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3290461" />
+      <window_info anchor="bottom" id="TODO" order="15" />
+      <window_info anchor="right" id="Maven" order="0" weight="0.36300638" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Bean Validation" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -660,27 +697,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java</url>
-          <line>46</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java</url>
-          <line>29</line>
+          <line>36</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java</url>
-          <line>43</line>
+          <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java</url>
+          <line>14</line>
           <properties />
           <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/web/UserResource.java</url>
@@ -692,11 +723,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java</url>
-          <line>28</line>
+          <line>35</line>
           <properties class="com.targa.labs.myBoutique.product.web.ProductResource" method="create">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java</url>
+          <line>27</line>
+          <properties field="categoryRepository" class="com.targa.labs.myBoutique.product.service.ProductService" />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -706,74 +743,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3318">
-          <caret line="201" selection-start-line="201" selection-end-line="201" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/web/UserResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../jwt-service/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/../config-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-518">
-          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../discovery-service/src/main/java/com/targa/labs/discoveryService/DiscoveryServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../discovery-service/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../discovery-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/domain/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/Configuration.java" />
-    <entry file="file://$PROJECT_DIR$/../config-server/src/main/resources/configurations/discovery-service.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../customer-service/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -795,13 +764,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../config-server/src/main/java/com/targa/labs/myBoutique/configServer/ConfigServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -889,13 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/utils/Web.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/configuration/SecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -920,74 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/enmeration/ProductStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/CategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ProductDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
-          <folding>
-            <element signature="e#2206#2214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CategoryDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/AbstractCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -1006,44 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/JwtServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../config-server/src/main/resources/configurations/product-service.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1054,32 +907,233 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java">
+    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/domain/AbstractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/enmeration/ProductStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/JwtServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/DepartmentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CategoryDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ProductDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CartDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CustomerDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/CategoryResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/domain/Product.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="58" column="30" lean-forward="true" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../config-server/src/main/java/com/targa/labs/myBoutique/configServer/ConfigServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/utils/Web.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/DepartmentResource.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
-            <element signature="e#1196#1204#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/domain/AbstractEntity.java">
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ReviewService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="-609">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/DepartmentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/CategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ReviewRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/DepartmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

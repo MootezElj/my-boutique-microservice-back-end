@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(API + "/products")
+@RequestMapping(API+"/products")
 public class ProductResource {
 	private final ProductService productService;
 
@@ -19,6 +19,13 @@ public class ProductResource {
 	public List<ProductDto> findAll(){
 		return this.productService.findAll();
 	}
+
+
+	@GetMapping("/category/{cat_name}")
+	public List<ProductDto> findAllByCategory(@PathVariable String cat_name){
+		return this.productService.findByCategory(cat_name);
+	}
+
 
 	@GetMapping("/{id}")
 	public ProductDto findById(@PathVariable Long id) {
@@ -30,11 +37,12 @@ public class ProductResource {
 		return this.productService.create(productDto);
 	}
 
-
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id) {
 		this.productService.findById(id);
 	}
+
+
 
 
 }

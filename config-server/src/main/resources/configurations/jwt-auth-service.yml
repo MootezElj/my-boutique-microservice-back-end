@@ -29,6 +29,13 @@ eureka:
 zuul:
   prefix: /api
   routes:
-    middleware:
+    product:
       path: /products/**
       url: http://localhost:9990/api/products
+    category:
+      path: /categories/**
+      url: http://localhost:9990/api/categories
+    department:
+      path: /departments/**
+      url: http://localhost:9990/api/departments
+
