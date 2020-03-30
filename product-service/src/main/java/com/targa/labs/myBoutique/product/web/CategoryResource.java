@@ -28,6 +28,11 @@ public class CategoryResource {
 		return this.categoryService.findById(id);		
 	}
 
+	@GetMapping("/department/{depName}")
+	public List<CategoryDto> findCategoriesOfDepartment(@PathVariable String depName) {
+		return this.categoryService.findCategoriesOfDepartment(depName);
+	}
+
 	@PostMapping
 	public CategoryDto create(CategoryDto categoryDto) {
 		return this.categoryService.create(categoryDto);

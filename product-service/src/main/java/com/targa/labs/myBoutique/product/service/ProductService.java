@@ -2,6 +2,7 @@ package com.targa.labs.myBoutique.product.service;
 
 import com.targa.labs.myBoutique.commons.dto.ProductDto;
 import com.targa.labs.myBoutique.commons.dto.ReviewDto;
+import com.targa.labs.myBoutique.product.domain.Category;
 import com.targa.labs.myBoutique.product.domain.Product;
 import com.targa.labs.myBoutique.product.domain.Review;
 import com.targa.labs.myBoutique.product.domain.enmeration.ProductStatus;
@@ -23,10 +24,15 @@ import java.util.stream.Collectors;
 @Slf4j
 @RequiredArgsConstructor
 public class ProductService {
-	@Autowired
 	private final ProductRepository productRepository;
-	@Autowired
 	private final CategoryRepository categoryRepository;
+
+	public List<ProductDto> findByCategory(String catName){
+		log.debug("Request to find Products having category : "+catName);
+		return this.productRepository.findAllByCategoryName(catName).stream()
+				.map(ProductService::mapToDto)
+				.collect(Collectors.toList());
+	}
 
 	public List<ProductDto> findAll(){
 		log.debug("Request to find all Products:{} ");
@@ -48,16 +54,20 @@ public class ProductService {
 						productDto.getName(),
 						productDto.getDescription(),
 						productDto.getPrice(),
+						productDto.getDiscount(),
 						productDto.getQuantity(),
 						ProductStatus.valueOf(productDto.getStatus()),
 						productDto.getSalesCounter(),
-						null,
+
 						this.categoryRepository.findById(productDto.getCategory().getId())
 						.orElse(null),
-						productDto.getImage()
+						null,
+						productDto.getImage1(),
+						productDto.getImage2(),
+						productDto.getImage3(),
+						productDto.getImage4()
 						)
 				));
-
 	}
 	
 	public void delete(Long id) {
@@ -75,13 +85,20 @@ public class ProductService {
 					product.getName(),
 					product.getDescription(),
 					product.getPrice(),
+					product.getDiscount(),
+					product.getPriceBeforeDiscount(),
 					product.getQuantity(),
 					product.getStatus().toString(),
 					product.getSalesCounter(),
 					reviews.stream().map(ReviewService::mapToDto)
 					.collect(Collectors.toSet()),
 					CategoryService.mapToDto(product.getCategory()),
-					product.getImage());
+					product.getImage1(),
+					product.getImage2(),
+					product.getImage3(),
+					product.getImage4()
+
+					);
 		}
 		return null;
 	}
