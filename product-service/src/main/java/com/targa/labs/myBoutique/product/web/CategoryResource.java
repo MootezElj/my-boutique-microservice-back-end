@@ -28,10 +28,17 @@ public class CategoryResource {
 		return this.categoryService.findById(id);		
 	}
 
+	@GetMapping("/category/{name}")
+	public CategoryDto getCategoryByName(@PathVariable String name){
+		return this.categoryService.findByName(name);
+	}
+
+
 	@GetMapping("/department/{depName}")
 	public List<CategoryDto> findCategoriesOfDepartment(@PathVariable String depName) {
 		return this.categoryService.findCategoriesOfDepartment(depName);
 	}
+
 
 	@PostMapping
 	public CategoryDto create(CategoryDto categoryDto) {
