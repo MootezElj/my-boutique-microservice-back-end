@@ -79,15 +79,16 @@ public class ProductServiceApplication implements CommandLineRunner {
 
 
 		//Sport dep categories
-		Category footbal = new Category("Footbal","Footbal category",electronics);
-		Category handball = new Category("Handball","Handball category",electronics);
-		Category camping = new Category("Camping","Camping category",electronics);
-		Category ping_pong = new Category("Ping Pong","Ping Pong",electronics);
-		Category hiking = new Category("Hiking","Hiking category",electronics);
+		Category footbal = new Category("Footbal","Footbal category",sport);
+		Category handball = new Category("Handball","Handball category",sport);
+		Category camping = new Category("Camping","Camping category",sport);
+		Category ping_pong = new Category("Ping Pong","Ping Pong",sport);
+		Category hiking = new Category("Hiking","Hiking category",sport);
 
 		//saving
 		categoryRepository.saveAll(Arrays.asList(men_clothing_cat,women_clothing_cat,boys_clothing_cat,girls_clothing_cat,kids_clothing_cat));
 		categoryRepository.saveAll(Arrays.asList(laptops,computers,gamer_pc,consoles,phones,drones));
+
 		categoryRepository.saveAll(Arrays.asList(footbal,handball,camping,ping_pong,hiking));
 
 		//men_clothing products

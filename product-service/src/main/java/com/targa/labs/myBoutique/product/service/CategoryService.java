@@ -61,6 +61,12 @@ public class CategoryService {
 		this.categoryRepository.deleteById(id);
 	}
 
+	public CategoryDto findByName(String name) {
+		log.debug("Request to delete Category : {}", name);
+		return this.mapToDto(this.categoryRepository.findFirstByName(name).get());
+
+	}
+
 	public static CategoryDto mapToDto(Category category) {
 		if (category != null) {
 			return new CategoryDto(
