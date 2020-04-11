@@ -38,4 +38,10 @@ zuul:
     department:
       path: /departments/**
       url: http://localhost:9990/api/departments
+    review:
+      path: /reviews/**
+      url: http://localhost:9990/api/reviews
+    customer:
+      path: /customers/**
+      url: http://localhost:9992/api/customers
 

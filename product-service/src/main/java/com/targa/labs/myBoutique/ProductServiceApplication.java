@@ -8,6 +8,7 @@ import com.targa.labs.myBoutique.product.domain.enmeration.ProductStatus;
 import com.targa.labs.myBoutique.product.repository.CategoryRepository;
 import com.targa.labs.myBoutique.product.repository.DepartmentRepository;
 import com.targa.labs.myBoutique.product.repository.ProductRepository;
+import com.targa.labs.myBoutique.product.repository.ReviewRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,16 +40,32 @@ public class ProductServiceApplication implements CommandLineRunner {
 	@Autowired
 	private DepartmentRepository departmentRepository;
 
+	@Autowired
+	private ReviewRepository reviewRepository;
+
 	private static Logger LOG = LoggerFactory
 			.getLogger(ProductServiceApplication.class);
 
 	@Override
 	public void run(String... args) throws Exception {
 
-		if (true){
+		if(false){
+			//Review r1 = new Review("Title Review 1","Description review 1 4",4l);
+			//Review r2 = new Review("Title Review 2","Description review 2 3",3l);
+			//this.reviewRepository.saveAll(Arrays.asList(r1,r2));
+			Department clothes = new Department("Clothes","Clothing department","https://cdn.pixabay.com/photo/2015/11/07/11/46/fashion-1031469_960_720.jpg");
+			Category men_clothing_cat = new Category("Men clothing","Men clothing category",clothes);
+			Product men_tshirt_zara = new Product("Men's Zara T-shirt","Taille : S|M|X|XL \n" +
+					"Colors: Blue,red and black \n" +
+					"Brand: ZARA"
+					,new BigDecimal(25),10,45,ProductStatus.AVAILABLE
+					,1,men_clothing_cat,"","","","");
+			Review r2 = new Review("Title Review 2","Description review 2 3",3l,men_tshirt_zara);
+			this.reviewRepository.save(r2);
 
+		}
 
-
+		if (false){
 		Department clothes = new Department("Clothes","Clothing department","https://cdn.pixabay.com/photo/2015/11/07/11/46/fashion-1031469_960_720.jpg");
 		Department electronics = new Department("Electronics","Electronics department","https://cdn.pixabay.com/photo/2015/06/24/15/45/ipad-820272_960_720.jpg");
 		Department tv_movies= new Department("Tv and movies","Tv and movies department","https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655_960_720.jpg");
@@ -97,17 +114,17 @@ public class ProductServiceApplication implements CommandLineRunner {
 				"Colors: Blue,red and black \n" +
 				"Brand: ZARA"
 				,new BigDecimal(25),10,45,ProductStatus.AVAILABLE
-				,1,men_clothing_cat,new HashSet<Review>(),"","","","");
+				,1,men_clothing_cat,"","","","");
 		//2
 		Product men_tshirt_pullAndBear = new Product("Men's Pull and Bear T-shirt","Taille : X|XL \n" +
 				"Colors: Blue and black"
 				,new BigDecimal(20),0,60,ProductStatus.AVAILABLE
-				,1,men_clothing_cat,new HashSet<Review>(),"","","","");
+				,1,men_clothing_cat,"","","","");
 
 		Product men_tshirt_bershka = new Product("Men's Bershka T-shirt","Taille : XS|S|X \n" +
 				"Colors: black"
 				,new BigDecimal(40),4,17,ProductStatus.DISCONTINUED
-				,1,men_clothing_cat,new HashSet<Review>(),"","","","");
+				,1,men_clothing_cat,"","","","");
 
 
 
@@ -117,17 +134,17 @@ public class ProductServiceApplication implements CommandLineRunner {
 				"Colors: Blue,red and black \n" +
 				"Brand: ZARA"
 				,new BigDecimal(40),2,45,ProductStatus.AVAILABLE
-				,1,women_clothing_cat,new HashSet<Review>(),"","","","");
+				,1,women_clothing_cat,"","","","");
 		//2
 		Product women_tshirt_pullAndBear = new Product("Women's Pull and Bear Pant","Taille : X|XL \n" +
 				"Colors: Blue and black"
 				,new BigDecimal(90),50,60,ProductStatus.AVAILABLE
-				,1,women_clothing_cat,new HashSet<Review>(),"","","","");
+				,1,women_clothing_cat,"","","","");
 
 		Product women_tshirt_bershka = new Product("Women's Bershka Pant","Taille : XS|S|X \n" +
 				"Colors: black"
 				,new BigDecimal(50),4,17,ProductStatus.DISCONTINUED
-				,1,women_clothing_cat,new HashSet<Review>(),"","","","");
+				,1,women_clothing_cat,"","","","");
 
 
 		productRepository.saveAll(Arrays.asList(men_tshirt_bershka,men_tshirt_zara,men_tshirt_pullAndBear,women_tshirt_bershka,women_tshirt_zara,women_tshirt_pullAndBear));
@@ -136,7 +153,7 @@ public class ProductServiceApplication implements CommandLineRunner {
 					,"Released 2018, March\n" +
 					"163g, 8.5mm thickness"
 					,new BigDecimal(499),20, 32, ProductStatus.DISCONTINUED
-					,1,phones,new HashSet<Review>(),"pic1.png","pic2.jpg",""
+					,1,phones,"pic1.png","pic2.jpg",""
 			,"");
 
 
@@ -145,7 +162,7 @@ public class ProductServiceApplication implements CommandLineRunner {
 					,"\"Released 2020, March\\n\" +\n" +
 					"140, 8.5mm thickness\\n\" +\n"
 					,new BigDecimal(999),10,25, ProductStatus.DISCONTINUED
-					,1,phones,new HashSet<Review>(),"pic1.png","pic.jpg","","");
+					,1,phones,"pic1.png","pic.jpg","","");
 
 
 
@@ -153,18 +170,20 @@ public class ProductServiceApplication implements CommandLineRunner {
 					,"At a Glance. The iPhone X was Apple's flagship 10th anniversary iPhone \n" +
 					"featuring a 5.8-inch OLED display, facial recognition and 3D camera \n"
 					,new BigDecimal(450),20,20, ProductStatus.AVAILABLE
-					,1,phones,new HashSet<Review>(),"pic1.jpg","pic2.jpg","","");
+					,1,phones,"pic1.jpg","pic2.jpg","","");
 
 
 			Product iphone11 = new Product("Iphone 11"
 					,"The iPhone 11 is a smartphone designed, developed, and marketed by Apple Inc.\n" +
 					" It is the thirteenth generation lower-priced iPhone"
 					,new BigDecimal(1499),0,11, ProductStatus.AVAILABLE
-					,1,phones,new HashSet<Review>(),"pic1.jpg","pic2.png","","");
+					,1,phones,"pic1.jpg","pic2.png","","");
 
 
 			this.productRepository.saveAll(Arrays.asList(s9,s11,iphoneX,iphone11));
 
+			Review r2 = new Review("Title Review 2","Description review 2 3",3l,men_tshirt_zara);
+			this.reviewRepository.save(r2);
 			}
 		}
 

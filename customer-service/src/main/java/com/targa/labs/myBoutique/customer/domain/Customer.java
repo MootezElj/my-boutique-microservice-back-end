@@ -28,15 +28,19 @@ public class Customer extends AbstractEntity {
     @Column(name = "first_name")
     private String firstName;
 
+
     @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "username")
+    private String username;
 
     @Email
     @Column(name = "email")
     private String email;
 
-    @Column(name = "telephone")
-    private String telephone;
+    @Column(name = "phone")
+    private String phone;
 
     @OneToMany(mappedBy = "customer")
     @JsonIgnore
@@ -45,4 +49,12 @@ public class Customer extends AbstractEntity {
     @Column(name = "enabled", nullable = false)
     private Boolean enabled;
 
+    public Customer(String firstName, String lastName, String username, @Email String email, String phone, Boolean enabled) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
+        this.email = email;
+        this.phone = phone;
+        this.enabled = enabled;
+    }
 }

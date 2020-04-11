@@ -26,10 +26,16 @@ public class CustomerSource {
 		return this.customerService.findById(id);
 	}
 
+	@GetMapping("/active/{username}")
+	public CustomerDto findActiveCustomerByUsername(String username) {
+		return this.customerService.findActiveCustomerByUsername(username);
+	}
+
 	@GetMapping("/active")
 	public List<CustomerDto> findAllActive() {
 		return this.customerService.findAllActive();
 	}
+
 	@GetMapping("/inactive")
 	public List<CustomerDto> findAllInactive() {
 		return this.customerService.findAllInactive();
