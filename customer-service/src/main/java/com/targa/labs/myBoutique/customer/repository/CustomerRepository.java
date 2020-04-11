@@ -8,5 +8,6 @@ import java.util.Optional;
 
 public interface CustomerRepository extends JpaRepository<Customer, Long>{
 	List<Customer> findAllByEnabled(boolean enabled);
+	Customer findByUsernameAndEnabled(String username,boolean enabled);
 	Optional<Customer> findById(Long id);
 }

@@ -30,8 +30,14 @@ public class ReviewResource {
 	public ReviewDto create(ReviewDto reviewDto) {
 		return this.reviewService.create(reviewDto);
 	}
-	
-	
+
+
+	@GetMapping("/ofProduct/{id}")
+	public List<ReviewDto> findAllByProductId(@PathVariable Long id) {
+		return this.reviewService.findAllByProductId(id);
+	}
+
+
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id) {
 		 this.reviewService.findById(id);

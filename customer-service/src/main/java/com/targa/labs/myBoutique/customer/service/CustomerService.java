@@ -27,8 +27,9 @@ public class CustomerService {
 						new Customer(null,
 								customerDto.getFirstName(),
 								customerDto.getLastName(),
+								customerDto.getUsername(),
 								customerDto.getEmail(),
-								customerDto.getTelephone(),
+								customerDto.getPhone(),
 								Collections.emptySet(),
 								Boolean.TRUE
 								)
@@ -66,6 +67,10 @@ public class CustomerService {
 				.collect(Collectors.toList());
 	}
 
+	public CustomerDto findActiveCustomerByUsername(String username){
+		return this.mapToDto(this.customerRepository.findByUsernameAndEnabled(username,true));
+	}
+
 	public void delete(Long id) {
 		log.debug("Request to delete Customer : {}", id);
 
@@ -83,7 +88,8 @@ public class CustomerService {
 					customer.getFirstName(),
 					customer.getLastName(),
 					customer.getEmail(),
-					customer.getTelephone()
+					customer.getPhone(),
+					customer.getUsername()
 					);
 		}
 		return null;

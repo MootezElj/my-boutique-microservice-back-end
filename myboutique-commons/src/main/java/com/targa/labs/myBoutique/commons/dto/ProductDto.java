@@ -1,13 +1,13 @@
 package com.targa.labs.myBoutique.commons.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.util.Set;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductDto {
@@ -20,7 +20,6 @@ public class ProductDto {
 	private Integer quantity;
 	private String status;
 	private Integer salesCounter;
-	private Set<ReviewDto> reviews;
 	private CategoryDto category;
 	private String image1;
 	private String image2;

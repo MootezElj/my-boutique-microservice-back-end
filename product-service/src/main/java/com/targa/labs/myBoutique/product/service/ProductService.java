@@ -58,10 +58,8 @@ public class ProductService {
 						productDto.getQuantity(),
 						ProductStatus.valueOf(productDto.getStatus()),
 						productDto.getSalesCounter(),
-
 						this.categoryRepository.findById(productDto.getCategory().getId())
 						.orElse(null),
-						null,
 						productDto.getImage1(),
 						productDto.getImage2(),
 						productDto.getImage3(),
@@ -76,9 +74,6 @@ public class ProductService {
 		}
 
 	public static ProductDto mapToDto(Product product) {
-		Set<Review> reviews = new HashSet<Review>();
-		if (product.getReviews()!=null)
-			reviews = product.getReviews();
 		if (product != null) {
 			return new ProductDto(
 					product.getId(),
@@ -90,15 +85,11 @@ public class ProductService {
 					product.getQuantity(),
 					product.getStatus().toString(),
 					product.getSalesCounter(),
-					reviews.stream().map(ReviewService::mapToDto)
-					.collect(Collectors.toSet()),
 					CategoryService.mapToDto(product.getCategory()),
 					product.getImage1(),
 					product.getImage2(),
 					product.getImage3(),
-					product.getImage4()
-
-					);
+					product.getImage4());
 		}
 		return null;
 	}

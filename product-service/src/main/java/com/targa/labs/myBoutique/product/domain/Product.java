@@ -1,6 +1,7 @@
 package com.targa.labs.myBoutique.product.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.targa.labs.myBoutique.commons.domain.AbstractEntity;
 import com.targa.labs.myBoutique.product.domain.enmeration.ProductStatus;
 import lombok.AllArgsConstructor;
@@ -51,10 +52,7 @@ public class Product extends AbstractEntity {
 	
 	@Column(name = "sales_counter")
 	private Integer salesCounter;
-	
-	@OneToMany
-	private Set<Review> reviews = new HashSet<Review>();
-	
+
 	@ManyToOne
 	private Category category;
 
@@ -66,7 +64,7 @@ public class Product extends AbstractEntity {
 
 
 
-	public Product(@NotNull String name, @NotNull String description, @NotNull BigDecimal price,Integer discount, Integer quantity, @NotNull ProductStatus status, Integer salesCounter, Set<Review> reviews, String image1,String image2, String image3, String image4) {
+	public Product(@NotNull String name, @NotNull String description, @NotNull BigDecimal price,Integer discount, Integer quantity, @NotNull ProductStatus status, Integer salesCounter, String image1,String image2, String image3, String image4) {
 		this.priceBeforeDiscount = price;
 		if ( discount !=0 )
 		{
@@ -79,21 +77,20 @@ public class Product extends AbstractEntity {
 		this.quantity = quantity;
 		this.status = status;
 		this.salesCounter = salesCounter;
-		this.reviews = reviews;
 		this.image1 = image1;
 		this.image2 = image2;
 		this.image3 = image3;
 		this.image4 = image4;
 	}
 
-	public Product(@NotNull String name, @NotNull String description, @NotNull BigDecimal price, Integer quantity, @NotNull ProductStatus status, Integer salesCounter, Set<Review> reviews, String image1,String image2, String image3, String image4) {
+	public Product(@NotNull String name, @NotNull String description, @NotNull BigDecimal price, Integer quantity, @NotNull ProductStatus status, Integer salesCounter,  String image1,String image2, String image3, String image4) {
 		this(name,description,price,0,quantity
-				,status,salesCounter,reviews,image1,image2,image3,image4);
+				,status,salesCounter,image1,image2,image3,image4);
 	}
 
-	public Product(@NotNull String name, @NotNull String description, @NotNull BigDecimal price,Integer discount, Integer quantity, @NotNull ProductStatus status, Integer salesCounter,Category category, Set<Review> reviews, String image1,String image2, String image3, String image4) {
+	public Product(@NotNull String name, @NotNull String description, @NotNull BigDecimal price,Integer discount, Integer quantity, @NotNull ProductStatus status, Integer salesCounter,Category category,String image1,String image2, String image3, String image4) {
 		this(name,description,price,discount,quantity
-				,status,salesCounter,reviews,image1,image2,image3,image4);
+				,status,salesCounter,image1,image2,image3,image4);
 		this.category = category;
 	}
 
