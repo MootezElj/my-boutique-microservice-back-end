@@ -20,6 +20,7 @@ public class CustomerService {
 
 	private final CustomerRepository customerRepository;
 
+	@Transactional
 	public CustomerDto create(CustomerDto customerDto) {
 		log.debug("Request to create Customer : {}", customerDto);
 		return mapToDto(

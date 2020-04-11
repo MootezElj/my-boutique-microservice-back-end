@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Email;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Data
@@ -44,7 +45,7 @@ public class Customer extends AbstractEntity {
 
     @OneToMany(mappedBy = "customer")
     @JsonIgnore
-    private Set<Cart> carts;
+    private Set<Cart> carts = new HashSet<>();
 
     @Column(name = "enabled", nullable = false)
     private Boolean enabled;

@@ -42,9 +42,10 @@ public class CustomerSource {
 	}
 
 	@PostMapping
-	public CustomerDto create(CustomerDto customerDto) {
+	public CustomerDto create(@RequestBody CustomerDto customerDto) {
 		return this.customerService.create(customerDto);
 	}
+
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id) {
 		this.customerService.delete(id);
