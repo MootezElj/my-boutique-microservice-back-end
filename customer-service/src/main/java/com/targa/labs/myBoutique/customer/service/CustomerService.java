@@ -5,8 +5,14 @@ import com.targa.labs.myBoutique.customer.domain.Customer;
 import com.targa.labs.myBoutique.customer.repository.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
 import java.util.List;
@@ -20,6 +26,8 @@ public class CustomerService {
 
 	private final CustomerRepository customerRepository;
 
+	DiscoveryClient discoveryClient;
+	RestTemplate restTemplate ;
 	@Transactional
 	public CustomerDto create(CustomerDto customerDto) {
 		log.debug("Request to create Customer : {}", customerDto);
@@ -38,6 +46,9 @@ public class CustomerService {
 				);
 	}
 
+
+
+
 	public List<CustomerDto> findAll() {
 		log.debug("Request to get all Customers");
 		return this.customerRepository.findAll()
@@ -50,6 +61,12 @@ public class CustomerService {
 	public CustomerDto findById(Long id) {
 		log.debug("Request to get Customer : {}", id);
 		return this.customerRepository.findById(id).map(CustomerService::mapToDto).orElse(null);
+	}
+
+	@Transactional(readOnly = true)
+	public CustomerDto findByEmail(String email) {
+		log.debug("Request to get Customer by email: {}", email);
+		return this.customerRepository.findByEmail(email).map(CustomerService::mapToDto).orElse(null);
 	}
 
 	public List<CustomerDto> findAllActive() {
@@ -94,6 +111,16 @@ public class CustomerService {
 					);
 		}
 		return null;
+	}
+
+
+	public String createUserIfUserExistent() {
+
+
+		String response = restTemplate.exchange("http://jwt-auth-service/api/jwt/test/",
+				HttpMethod.GET, null, new ParameterizedTypeReference<String>() {}).getBody();
+		return  response;
+
 	}
 
 }

@@ -10,4 +10,5 @@ public interface CustomerRepository extends JpaRepository<Customer, Long>{
 	List<Customer> findAllByEnabled(boolean enabled);
 	Customer findByUsernameAndEnabled(String username,boolean enabled);
 	Optional<Customer> findById(Long id);
+	Optional<Customer> findByEmail(String email);
 }
