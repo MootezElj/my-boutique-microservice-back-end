@@ -1,7 +1,17 @@
 package com.labs.targa.auth.security.service;
 
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.util.Arrays;
 import java.util.List;
 
+import com.labs.targa.auth.security.dto.UserDto;
+import com.sun.org.apache.xerces.internal.impl.xs.identity.Field;
+import org.hibernate.annotations.Target;
+import org.hibernate.annotations.Type;
+import org.hibernate.validator.internal.constraintvalidators.bv.EmailValidator;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,13 +22,16 @@ import com.labs.targa.auth.security.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.validation.Constraint;
+import javax.validation.Payload;
+
 @Service
 @RequiredArgsConstructor
 @Transactional
 @Slf4j
 public class UserService {
-	
-	
+
+	private PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 	private final UserRepository userRepository;
 	
 	public List<User> getAllUsers() {
@@ -60,6 +73,57 @@ public class UserService {
 			return user;
 		}
 		return null;
+	}
+
+	public User getUserByEmail(String email) {
+		if (email!=null) {
+			User user = this.userRepository.findByEmail(email);
+			return user;
+		}
+		return null;
+	}
+
+	@Transactional
+	public UserDto registerNewUserAccount(UserDto userDto,String role)
+			throws Exception {
+	try{
+		User u = this.getUserByUsername(userDto.getUsername());
+		}
+		catch (NullPointerException e){
+
+		}
+
+		if (this.getUserByUsername(userDto.getUsername())!=null){
+			throw new Exception(
+					"There is an account with that username:"
+							+ userDto.getUsername());
+		}
+
+		if (this.getUserByEmail(userDto.getEmail())!=null){
+			throw new Exception(
+					"There is an account with that email address:"
+							+ userDto.getEmail());
+		}
+
+		if (!userDto.getPassword().equals(userDto.getMatchingPassword()))
+		{
+			throw new Exception(
+					"Passwords don't match:");
+		}
+
+		User user = new User();
+		user.setEmail(userDto.getEmail());
+		user.setUsername(userDto.getUsername());
+		user.setPassword(passwordEncoder.encode(userDto.getPassword()));
+		user.setEmail(userDto.getEmail());
+		//ROLE_USER
+		user.setRoles(role);
+		userRepository.save(user);
+		return userDto;
+	}
+
+	private boolean emailExists(String email) {
+		return userRepository.findByEmail(email) != null;
 	}
 	
 	

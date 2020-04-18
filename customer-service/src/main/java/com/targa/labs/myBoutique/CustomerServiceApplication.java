@@ -24,6 +24,6 @@ public class CustomerServiceApplication  implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		this.customerRepository.save(new Customer("Mootez","Elj","admin","admin@gmail.com","51906322",true));
+		//this.customerRepository.save(new Customer("Mootez","Elj","admin","admin@gmail.com","51906322",true));
 	}
 }

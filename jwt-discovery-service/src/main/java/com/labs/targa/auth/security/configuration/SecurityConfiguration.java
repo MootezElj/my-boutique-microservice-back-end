@@ -57,7 +57,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 				.antMatchers(HttpMethod.POST, "/login").permitAll()
 				.antMatchers(HttpMethod.GET, "/api/products").authenticated()
 				.antMatchers(HttpMethod.GET, "/jwt/currentUser").authenticated()
-				.antMatchers(HttpMethod.GET, "/jwt/test").authenticated()
+				.antMatchers(HttpMethod.GET, "/jwt/test").permitAll()
+				.antMatchers(HttpMethod.GET, "/jwt/register-customer").permitAll()
 
 		//login
 		;
@@ -95,5 +96,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
 }
