@@ -56,18 +56,17 @@ public class OrderService {
 				);
 	}
 
-	public Order create(CartDto cart) {
+	public OrderDto create(CartDto cart) {
 		log.debug("Request to create with a cart : {}", cart);
-		return new Order(
-				BigDecimal.ZERO,
-				OrderStatus.CREATION,
-				null,
-				null,
-				null,
-				Collections.emptySet(),
-				cart.getId());
-
-
+		return this.mapToDto(this.orderRepository
+				.save(new Order(
+						BigDecimal.ZERO,
+						OrderStatus.CREATION,
+						null,
+						null,
+						null,
+						Collections.emptySet(),
+						cart.getId())));
 	}
 	
 	public void delete(Long id) {

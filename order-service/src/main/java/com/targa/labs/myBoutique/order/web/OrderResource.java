@@ -32,7 +32,7 @@ public class OrderResource {
 	}
 
 	@PostMapping
-	public void create(CartDto cartDto){
-		 this.orderService.create(cartDto);
+	public OrderDto create(@RequestBody  CartDto cartDto){
+		return this.orderService.create(cartDto);
 	}
 }

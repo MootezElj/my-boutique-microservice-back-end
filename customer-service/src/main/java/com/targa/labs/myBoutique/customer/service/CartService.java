@@ -48,15 +48,15 @@ public class CartService {
 			Customer customer = this.customerRepository.findById(customerId)
 					.orElseThrow(() -> new IllegalStateException("The Customer does not exist!"));
 
-			Cart cart = new Cart(
+ 				Cart cart = new Cart(
 					customer,
 					CartStatus.NEW
 					);
 
+			Cart c = this.cartRepository.save(cart);
 			OrderDto order = this.orderService.create(mapToDto(cart));
-			cart.setOrderId(order.getId());
-
-			return mapToDto(this.cartRepository.save(cart));
+			c.setOrderId(order.getId());
+			return mapToDto(c);
 		} else {
 			throw new IllegalStateException("There is already an active cart");
 		}
@@ -104,6 +104,10 @@ public class CartService {
 					);
 		}
 		return null;
+	}
+
+	public Cart findCartByUsername(String customerUsername){
+		return this.cartRepository.findFirstByCustomerUsername(customerUsername);
 	}
 
 }

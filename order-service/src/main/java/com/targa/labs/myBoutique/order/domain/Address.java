@@ -3,6 +3,7 @@ package com.targa.labs.myBoutique.order.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
@@ -13,6 +14,7 @@ import javax.validation.constraints.Size;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @Embeddable
+@NoArgsConstructor
 public class Address {
 
 	@Column(name = "address_1")
@@ -24,14 +26,12 @@ public class Address {
 	@Column(name = "city")
 	private String City;
 
-	@NotNull
-	@Size(max = 10)
-	@Column(name = "postcode", length = 10, nullable = false)
+
+	@Column(name = "postcode")
 	private String postcode;
 
-	@NotNull
-	@Size(max = 2)
-	@Column(name = "country", length = 2, nullable = false)
-	private String country;
+
+	@Column(name = "country")
+	private String country ;
 
 }

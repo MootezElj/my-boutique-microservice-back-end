@@ -10,6 +10,7 @@
         <module name="discovery-service" />
         <module name="product-service" />
         <module name="customer-service" />
+        <module name="order-service" />
         <module name="jwt-discovery-service" />
         <module name="myboutique-commons" />
         <module name="config-server" />
@@ -23,6 +24,7 @@
       <module name="discovery-service" target="1.8" />
       <module name="jwt-discovery-service" target="1.8" />
       <module name="myboutique-commons" target="1.8" />
+      <module name="order-service" target="1.8" />
       <module name="product-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -33,6 +35,7 @@
       <module name="customer-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />
       <module name="jwt-discovery-service" options="-parameters" />
+      <module name="order-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
     </option>
   </component>

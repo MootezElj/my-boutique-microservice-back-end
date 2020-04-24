@@ -5,6 +5,7 @@ import com.targa.labs.myBoutique.customer.domain.enumeration.CartStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -13,6 +14,7 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @Entity
+@NoArgsConstructor
 @Table(name = "cart")
 public class Cart extends AbstractEntity {
 

@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/../myboutique-commons/pom.xml" />
         <option value="$PROJECT_DIR$/../jwt-discovery-service/pom.xml" />
         <option value="$PROJECT_DIR$/../product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../order-service/pom.xml" />
       </list>
     </option>
   </component>

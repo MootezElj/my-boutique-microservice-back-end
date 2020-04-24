@@ -26,7 +26,6 @@ public class CustomerService {
 
 	private final CustomerRepository customerRepository;
 
-	DiscoveryClient discoveryClient;
 	RestTemplate restTemplate ;
 	@Transactional
 	public CustomerDto create(CustomerDto customerDto) {

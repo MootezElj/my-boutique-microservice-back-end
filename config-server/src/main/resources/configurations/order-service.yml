@@ -1,2 +1,25 @@
 server:
   port: 9991
+
+spring:
+  datasource:
+    password:
+    testWhileIdle: true
+    url: jdbc:mysql://localhost:3306/order-service-db?useSSL=false
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 160000000
+        readTimeout: 160000000
