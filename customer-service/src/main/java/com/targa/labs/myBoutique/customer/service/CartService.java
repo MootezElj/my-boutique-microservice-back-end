@@ -1,5 +1,6 @@
 package com.targa.labs.myBoutique.customer.service;
 
+import com.sun.deploy.net.HttpRequest;
 import com.targa.labs.myBoutique.commons.dto.CartDto;
 import com.targa.labs.myBoutique.commons.dto.OrderDto;
 import com.targa.labs.myBoutique.customer.domain.Cart;
@@ -7,15 +8,22 @@ import com.targa.labs.myBoutique.customer.domain.Customer;
 import com.targa.labs.myBoutique.customer.domain.enumeration.CartStatus;
 import com.targa.labs.myBoutique.customer.repository.CartRepository;
 import com.targa.labs.myBoutique.customer.repository.CustomerRepository;
+import com.targa.labs.myBoutique.customer.utils.MyBoutiqueUtils;
+import com.targa.labs.myBoutique.customer.utils.TokenProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import com.auth0.jwt.JWT;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static com.auth0.jwt.algorithms.Algorithm.HMAC512;
 
 @RequiredArgsConstructor
 @Slf4j
@@ -25,6 +33,7 @@ public class CartService {
 
 	private final CartRepository cartRepository;
 	private final CustomerRepository customerRepository;
+
 	
 	private final OrderServiceClient orderService;
 
@@ -61,6 +70,35 @@ public class CartService {
 			throw new IllegalStateException("There is already an active cart");
 		}
 	}
+
+	public OrderDto addProductToCart(String token, Long productId){
+		Long cartId = MyBoutiqueUtils.getCartIdFromToken(token);
+		Cart cart = this.cartRepository.findById(cartId).get();
+		this.orderService.addProductToOrder(cart.getOrderId(),productId);
+		return null;
+	}
+
+	public CartDto getCartByToken(String token){
+		Long cartId = MyBoutiqueUtils.getCartIdFromToken(token);
+		Cart cart = this.cartRepository.findById(cartId).get();
+		return this.mapToDto(cart);
+	}
+
+	//working
+	public String createAnonym(){
+		Cart cart = new Cart();
+		cart.setStatus(CartStatus.NEW);
+		Long id = this.cartRepository.save(cart).getId();
+		OrderDto order = this.orderService.create(mapToDto(cart));
+		cart.setOrderId(order.getId());
+		String jwt = JWT.create()
+				.withSubject(id.toString())
+				.withIssuer("customer-service-myBoutique")
+				.sign(HMAC512(TokenProperties.secret));
+
+		return jwt;
+	}
+
 
 	@Transactional(readOnly = true)
 	public CartDto findById(Long id) {

@@ -56,6 +56,13 @@ public class OrderItemService {
 		this.orderItemRepository.deleteById(id);
 	}
 
+	public List<OrderItemDto> findByOrderId(Long orderId){
+		return this.orderItemRepository.findAllByOrderId(orderId)
+				.stream()
+				.map(OrderItemService::mapToDto)
+				.collect(Collectors.toList());
+	}
+
 
 	public static OrderItemDto mapToDto(OrderItem orderItem) {
 		if (orderItem != null) {

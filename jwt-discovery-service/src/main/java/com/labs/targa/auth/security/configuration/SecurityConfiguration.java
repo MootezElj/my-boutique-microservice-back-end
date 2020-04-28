@@ -55,7 +55,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 		.addFilter(new JwtAuthorizationFilter(authenticationManager(),  this.userRepository))
 		.authorizeRequests()
 				.antMatchers(HttpMethod.POST, "/login").permitAll()
-				.antMatchers(HttpMethod.GET, "/api/products").authenticated()
+				.antMatchers(HttpMethod.GET, "/api/products").permitAll()
 				.antMatchers(HttpMethod.GET, "/jwt/currentUser").authenticated()
 				.antMatchers(HttpMethod.GET, "/jwt/test").permitAll()
 				.antMatchers(HttpMethod.GET, "/jwt/register-customer").permitAll()

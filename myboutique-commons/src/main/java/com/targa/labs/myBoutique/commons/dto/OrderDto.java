@@ -18,5 +18,4 @@ public class OrderDto {
     private ZonedDateTime shipped;
     private PaymentDto payment;
     private AddressDto shipmentAddress;
-    private Set<OrderItemDto> orderItems;
 }

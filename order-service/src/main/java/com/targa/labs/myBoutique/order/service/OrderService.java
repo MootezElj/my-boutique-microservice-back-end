@@ -3,7 +3,9 @@ package com.targa.labs.myBoutique.order.service;
 import com.targa.labs.myBoutique.commons.dto.CartDto;
 import com.targa.labs.myBoutique.commons.dto.OrderDto;
 import com.targa.labs.myBoutique.order.domain.Order;
+import com.targa.labs.myBoutique.order.domain.OrderItem;
 import com.targa.labs.myBoutique.order.domain.enumeration.OrderStatus;
+import com.targa.labs.myBoutique.order.repository.OrderItemRepository;
 import com.targa.labs.myBoutique.order.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +23,7 @@ import java.util.stream.Collectors;
 @Transactional
 public class OrderService {
 	private final OrderRepository orderRepository;
+	private final OrderItemRepository orderItemRepository;
 
 	public List<OrderDto> findAll() {
 		log.debug("Request to get all Orders");
@@ -56,6 +59,15 @@ public class OrderService {
 				);
 	}
 
+	public OrderDto addProductToOrder(Long orderId,Long productId){
+		Order order=this.orderRepository.findById(orderId).get();
+		OrderItem  orderItem = new OrderItem(1l,productId,order);
+		orderItem.setOrder(order);
+		orderItemRepository.save(orderItem);
+		order.getOrderItems().add(orderItem);
+		return this.mapToDto(this.orderRepository.save(order));
+	}
+
 	public OrderDto create(CartDto cart) {
 		log.debug("Request to create with a cart : {}", cart);
 		return this.mapToDto(this.orderRepository
@@ -82,9 +94,8 @@ public class OrderService {
 					order.getStatus().name(),
 					order.getShipped(),
 					PaymentService.mapToDto(order.getPayment()),
-					AddressService.mapToDto(order.getShipmentAddress()),
-					order.getOrderItems().stream().map(OrderItemService::mapToDto).collect(Collectors
-							.toSet()));
+					AddressService.mapToDto(order.getShipmentAddress())
+					);
 		}
 		return null;
 	}

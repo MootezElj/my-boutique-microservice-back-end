@@ -3,10 +3,7 @@ package com.targa.labs.myBoutique.order.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.targa.labs.myBoutique.commons.domain.AbstractEntity;
 import com.targa.labs.myBoutique.order.domain.enumeration.OrderStatus;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -15,10 +12,11 @@ import java.time.ZonedDateTime;
 import java.util.Set;
 
 
-@Data
+
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(callSuper = false)
+@Getter
+@Setter
 @Entity
 @Table(name = "orders")
 public class Order extends AbstractEntity{
@@ -48,4 +46,16 @@ public class Order extends AbstractEntity{
 	private Set<OrderItem> orderItems;
 
 	private Long cartId;
+
+	@Override
+	public String toString() {
+		return "Order{" +
+				"totalPrice=" + totalPrice +
+				", status=" + status +
+				", shipped=" + shipped +
+				", payment=" + payment +
+				", shipmentAddress=" + shipmentAddress +
+				", cartId=" + cartId +
+				'}';
+	}
 }

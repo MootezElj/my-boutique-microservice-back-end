@@ -44,4 +44,12 @@ zuul:
     customer:
       path: /customers/**
       url: http://localhost:9992/api/customers
+    cart:
+      path: /carts/**
+      url: http://localhost:9992/api/carts
+    order-items:
+      path: /order-items/**
+      url: http://localhost:9991/api/order-items
+
+
 

@@ -15,12 +15,18 @@ import static com.targa.labs.myBoutique.commons.utils.Web.API;
 public class OrderItemResource {
 
 	private final OrderItemService orderItemService;
-	
+
 	@GetMapping
 	public List<OrderItemDto> findAll(){
 		return this.orderItemService.findAll();
 	}
-	
+
+	@GetMapping("/order/{orderId}")
+	public List<OrderItemDto> getOrderItemsByOrderId(@PathVariable Long orderId) {
+		return this.orderItemService.findByOrderId(orderId);
+	}
+
+
 	@GetMapping("/{id}")
 	public OrderItemDto findById(@PathVariable Long id) {
 		return this.orderItemService.findById(id);
@@ -34,5 +40,8 @@ public class OrderItemResource {
 	public void delete(@PathVariable Long id) {
 		this.orderItemService.delete(id);
 	}
+
+
+
 	
 }

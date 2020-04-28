@@ -2,6 +2,7 @@ package com.targa.labs.myBoutique.order.web;
 
 import com.targa.labs.myBoutique.commons.dto.CartDto;
 import com.targa.labs.myBoutique.commons.dto.OrderDto;
+import com.targa.labs.myBoutique.commons.dto.OrderItemDto;
 import com.targa.labs.myBoutique.order.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +21,12 @@ public class OrderResource {
 	public List<OrderDto> findAll() {
 		return this.orderService.findAll();
 	}
-	
+
+
+	@PutMapping("/AddProduct/{orderId}/{productId}")
+	public OrderDto addProductToOrder(@PathVariable Long orderId,@PathVariable Long productId){
+		return this.orderService.addProductToOrder(orderId,productId);
+	}
 	
 	@GetMapping("/{id}")
 	public OrderDto findById(@PathVariable Long id) {return this.orderService.findById(id);

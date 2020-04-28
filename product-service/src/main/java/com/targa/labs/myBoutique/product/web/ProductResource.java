@@ -20,12 +20,10 @@ public class ProductResource {
 		return this.productService.findAll();
 	}
 
-
 	@GetMapping("/category/{cat_name}")
 	public List<ProductDto> findAllByCategory(@PathVariable String cat_name){
 		return this.productService.findByCategory(cat_name);
 	}
-
 
 	@GetMapping("/{id}")
 	public ProductDto findById(@PathVariable Long id) {
