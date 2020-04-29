@@ -60,11 +60,17 @@ public class OrderService {
 	}
 
 	public OrderDto addProductToOrder(Long orderId,Long productId){
+		OrderItem orderItem = this.orderItemRepository.findByProductIdAndOrderId(productId,orderId);
 		Order order=this.orderRepository.findById(orderId).get();
-		OrderItem  orderItem = new OrderItem(1l,productId,order);
-		orderItem.setOrder(order);
+		if (orderItem!=null){
+			orderItem.setQuantity(orderItem.getQuantity()+1);
+		}
+		else {
+			orderItem = new OrderItem(1l,productId,order);
+			orderItem.setOrder(order);
+			order.getOrderItems().add(orderItem);
+		}
 		orderItemRepository.save(orderItem);
-		order.getOrderItems().add(orderItem);
 		return this.mapToDto(this.orderRepository.save(order));
 	}
 
