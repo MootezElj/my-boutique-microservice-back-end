@@ -52,11 +52,9 @@ public class CartService {
 				.collect(Collectors.toList());
 	}
 
-	public CartDto create(Long customerId) {
-		if (this.getActiveCart(customerId) == null) {
-			Customer customer = this.customerRepository.findById(customerId)
-					.orElseThrow(() -> new IllegalStateException("The Customer does not exist!"));
-
+	public CartDto create(String customerUsername) {
+		Customer customer = this.customerRepository.findByUsernameAndEnabled(customerUsername,true);
+		if ((this.getActiveCart(customerUsername) == null) && (customer!=null)) {
  				Cart cart = new Cart(
 					customer,
 					CartStatus.NEW
@@ -71,11 +69,33 @@ public class CartService {
 		}
 	}
 
+	public CartDto create(Long customerId) {
+		if (this.getActiveCart(customerId) == null) {
+			Customer customer = this.customerRepository.findById(customerId)
+					.orElseThrow(() -> new IllegalStateException("The Customer does not exist!"));
+
+			Cart cart = new Cart(
+					customer,
+					CartStatus.NEW
+			);
+
+			OrderDto order = this.orderService.create(mapToDto(cart));
+			cart.setOrderId(order.getId());
+
+			return mapToDto(this.cartRepository.save(cart));
+		} else {
+			throw new IllegalStateException("There is already an active cart");
+		}
+	}
+
 	public OrderDto addProductToCart(String token, Long productId){
 		Long cartId = MyBoutiqueUtils.getCartIdFromToken(token);
+		return this.addProductToCart(cartId,productId);
+	}
+
+	public OrderDto addProductToCart(Long cartId, Long productId){
 		Cart cart = this.cartRepository.findById(cartId).get();
-		this.orderService.addProductToOrder(cart.getOrderId(),productId);
-		return null;
+		return this.orderService.addProductToOrder(cart.getOrderId(),productId);
 	}
 
 	public CartDto getCartByToken(String token){
@@ -130,6 +150,35 @@ public class CartService {
 		}
 
 		return null;
+	}
+
+	public CartDto getActiveCart(String customerUsername) {
+		List<Cart> carts = this.cartRepository
+				.findByStatusAndCustomerUsername(CartStatus.NEW, customerUsername);
+		if (carts != null) {
+
+			if (carts.size() == 1) {
+				return mapToDto(carts.get(0));
+			}
+			if (carts.size() > 1) {
+				throw new IllegalStateException("Many active carts detected !!!");
+			}
+		}
+
+		return null;
+	}
+
+	public CartDto assignAnonymCartToUser(String cartToken, String customerUsername){
+		Long cartId = MyBoutiqueUtils.getCartIdFromToken(cartToken);
+		return this.assignCartToCustomer(cartId,customerUsername);
+	}
+
+
+	public CartDto assignCartToCustomer(Long cartId, String customerUsername){
+		Cart cart = this.cartRepository.findById(cartId).get();
+		Customer customer = this.customerRepository.findByUsernameAndEnabled(customerUsername, true);
+		cart.setCustomer(customer);
+		return mapToDto(this.cartRepository.save(cart));
 	}
 
 	public static CartDto mapToDto(Cart cart) {

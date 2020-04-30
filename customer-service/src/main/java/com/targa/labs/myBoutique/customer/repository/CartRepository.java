@@ -13,6 +13,7 @@ public interface CartRepository extends JpaRepository<Cart, Long>{
 	List<Cart> findByStatus(CartStatus status);
 	Cart findFirstByCustomerUsername(String customerUsername);
 	List<Cart> findByStatusAndCustomerId(CartStatus status, Long customerId);
+	List<Cart> findByStatusAndCustomerUsername(CartStatus status, String customerUsername);
 	Optional<Cart> findById(Long id);
 
 }
