@@ -1,40 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b037c49-26ae-48e9-9d7a-61d49e990623" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/customer-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/customer-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/order-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/order-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/product-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/product-service.yml" afterDir="false" />
+    <list default="true" id="c52688d6-cd96-4978-9011-41834badd5fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/web/CartResourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/web/CartResourse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_ws_spring_ws_core_3_0_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_ws_spring_xml_3_0_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,85 +13,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="alwaysUpdateSnapshots" value="true" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="jdkForImporter" value="1.8" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1bFkPb4oMnV1tREbUf5dzlj0PZZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1bRFYvocJTvG9EkTtv2EnS5itm9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jwt-discovery-service" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.08944544" />
-    <property name="project.structure.side.proportion" value="0.13038906" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../config-server" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.labs.targa.auth.security.configuration" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\workspaces\my-boutique-workspace\my-boutique-microservice-back-end\jwt-discovery-service\src\main\resources" />
-      <recent name="E:\projects\workspaces\my-boutique-workspace\my-boutique-microservice-master\auth-service\src\main\java\com\targa\labs\myBoutique\auth\configuration" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.JwtServiceApplication">
-    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.configServer.ConfigServerApplication" />
-      <module name="config-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.targa.labs.myBoutique.configServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ProductServiceApplication">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.CustomerServiceApplication" />
       <module name="customer-service" />
@@ -173,232 +79,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="auth-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.myBoutique.auth.AuthServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="customer-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.myBoutique.CustomerServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="discovery-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.discoveryService.DiscoveryServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="order-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.myBoutique.OrderServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.ProductServiceApplication" />
       <module name="product-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.myBoutique.ProductServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.targa.labs.myBoutique.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.ConfigServerApplication" />
-      <item itemvalue="Application.DiscoveryServiceApplication" />
-      <item itemvalue="Application.CustomerServiceApplication" />
-      <item itemvalue="Application.OrderServiceApplication" />
-      <item itemvalue="Application.JwtServiceApplication" />
-    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProductServiceApplication" />
         <item itemvalue="Application.JwtServiceApplication" />
-        <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="Application.CustomerServiceApplication" />
         <item itemvalue="Application.DiscoveryServiceApplication" />
-        <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpringGeneralSettings">
-    <option name="allowAutoConfigurationMode" value="true" />
-  </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\Mootez\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6b037c49-26ae-48e9-9d7a-61d49e990623" name="Default Changelist" comment="" />
-      <created>1584541368315</created>
+      <changelist id="c52688d6-cd96-4978-9011-41834badd5fe" name="Default Changelist" comment="" />
+      <created>1588587051243</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584541368315</updated>
-      <workItem from="1584541369441" duration="867000" />
-      <workItem from="1584542328034" duration="1901000" />
-      <workItem from="1584544292378" duration="156000" />
-      <workItem from="1584544465486" duration="11533000" />
-      <workItem from="1584560655463" duration="504000" />
-      <workItem from="1584561179707" duration="1726000" />
-      <workItem from="1584564513720" duration="3037000" />
-      <workItem from="1584731836292" duration="1226000" />
-      <workItem from="1584733920517" duration="1119000" />
-      <workItem from="1584750456868" duration="3137000" />
-      <workItem from="1584822839311" duration="9101000" />
-      <workItem from="1584835521418" duration="1500000" />
-      <workItem from="1584866470172" duration="9440000" />
-      <workItem from="1584899627458" duration="586000" />
-      <workItem from="1584991808735" duration="5814000" />
-      <workItem from="1585077196326" duration="1703000" />
-      <workItem from="1585086964146" duration="2774000" />
-      <workItem from="1585089847437" duration="947000" />
-      <workItem from="1585090886488" duration="3672000" />
-      <workItem from="1585166198268" duration="275000" />
-      <workItem from="1585244608878" duration="49000" />
-      <workItem from="1585253226743" duration="3264000" />
-      <workItem from="1585265543158" duration="830000" />
-      <workItem from="1585333105824" duration="10290000" />
-      <workItem from="1585414649963" duration="8084000" />
-      <workItem from="1585434039299" duration="697000" />
-      <workItem from="1585439762255" duration="2516000" />
-      <workItem from="1585446725480" duration="1532000" />
-      <workItem from="1585500981086" duration="10958000" />
-      <workItem from="1585571515800" duration="591000" />
-      <workItem from="1585601430223" duration="6508000" />
-      <workItem from="1585678674777" duration="1828000" />
-      <workItem from="1585691727105" duration="2832000" />
-      <workItem from="1585698862173" duration="270000" />
-      <workItem from="1585700143335" duration="1950000" />
-      <workItem from="1585843865045" duration="3757000" />
-      <workItem from="1586035326970" duration="23000" />
-      <workItem from="1586041249026" duration="12618000" />
-      <workItem from="1586119957899" duration="3047000" />
-      <workItem from="1586254564539" duration="8847000" />
-      <workItem from="1586469062433" duration="4530000" />
-      <workItem from="1586553579071" duration="3705000" />
-      <workItem from="1586644258389" duration="2723000" />
-      <workItem from="1586710603892" duration="587000" />
-      <workItem from="1586806451574" duration="5037000" />
-      <workItem from="1586916267828" duration="562000" />
-      <workItem from="1586939768270" duration="2753000" />
-      <workItem from="1586942627783" duration="3131000" />
-      <workItem from="1587234173545" duration="3713000" />
-      <workItem from="1587241120115" duration="1195000" />
-      <workItem from="1587334776778" duration="3183000" />
-      <workItem from="1587677723972" duration="5466000" />
-      <workItem from="1587758787847" duration="3653000" />
-      <workItem from="1587941288482" duration="7716000" />
-      <workItem from="1588021265528" duration="4669000" />
-      <workItem from="1588026552036" duration="2409000" />
-      <workItem from="1588199435678" duration="4297000" />
+      <updated>1588587051243</updated>
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200838000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="163" y="0" key="#Project_Structure" timestamp="1588241804101">
+    <state x="463" y="73" key="FileChooserDialogImpl" timestamp="1588587107802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1588241804101" />
-    <state x="463" y="73" key="FileChooserDialogImpl" timestamp="1588240933205">
+    <state x="463" y="73" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588587107802" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1588587623017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="73" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588240933205" />
-    <state width="1323" height="270" key="GridCell.Tab.0.bottom" timestamp="1588246222885">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588587623017" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1588587623017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588246222885" />
-    <state width="1323" height="270" key="GridCell.Tab.0.center" timestamp="1588246222885">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588587623017" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1588587623017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588246222885" />
-    <state width="1323" height="270" key="GridCell.Tab.0.left" timestamp="1588246222885">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588587623017" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1588587623017">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588246222885" />
-    <state width="1323" height="270" key="GridCell.Tab.0.right" timestamp="1588246222885">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588587623017" />
+    <state x="348" y="68" key="NewModule_or_Project.wizard" timestamp="1588587110624">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588246222885" />
-    <state x="348" y="68" key="NewModule_or_Project.wizard" timestamp="1588240935692">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="348" y="68" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1588240935692" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1588240715409">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1588240715409" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1588241673879">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1588241673879" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java</url>
-          <line>33</line>
-          <properties class="com.targa.labs.myBoutique.product.web.ProductResource" method="create">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/OrderServiceClient.java</url>
-          <line>17</line>
-          <properties class="com.targa.labs.myBoutique.customer.service.OrderServiceClient" method="create" />
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/CartService.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/service/OrderService.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="mavenExecuteGoalHistory">
-    <option value="$PROJECT_DIR$/../config-server" />
-    <option value="clean install" />
+    <state x="348" y="68" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1588587110624" />
   </component>
 </project>

@@ -14,6 +14,7 @@ import static com.targa.labs.myBoutique.commons.utils.Web.API;
 @RestController
 @RequestMapping(API + "/carts")
 public class CartResourse {
+
 	private final CartService cartService;
 	@GetMapping
 	public List<CartDto> findAll() {
@@ -29,6 +30,13 @@ public class CartResourse {
 	public CartDto getActiveCartForCustomer(@PathVariable("id") Long customerId) {
 		return this.cartService.getActiveCart(customerId);
 	}
+
+	@GetMapping("/customer")
+	public CartDto getActiveCartForCustomer(@RequestParam("username") String customerUsername) {
+		return this.cartService.getActiveCart(customerUsername);
+	}
+
+
 	@GetMapping("/{id}")
 	public CartDto findById(@PathVariable Long id) {
 		return this.cartService.findById(id);
@@ -40,9 +48,9 @@ public class CartResourse {
 		return this.cartService.getCartByToken(CartToken);
 	}
 
-	@PostMapping("/customer/{id}")
-	public CartDto create(@PathVariable("id") Long customerId) {
-		return this.cartService.create(customerId);
+	@PostMapping("/customer/{username}")
+	public CartDto create(@PathVariable("username") String username) {
+		return this.cartService.create(username);
 	}
 
 	@PostMapping()
@@ -55,11 +63,24 @@ public class CartResourse {
 		this.cartService.delete(id);
 	}
 
+	//Anonym Cart
 	@PutMapping("/AddProduct/{productId}")
 	public OrderDto addProductToOrder(@RequestHeader("CartToken") String CartToken,@PathVariable Long productId ){
 		return this.cartService.addProductToCart(CartToken,productId);
 	}
 
+	@PutMapping("/AddProduct/{cartId}/{productId}")
+	public OrderDto addProductToOrder(@PathVariable Long cartId,@PathVariable Long productId ){
+		return this.cartService.addProductToCart(cartId,productId);
+	}
 
+	@PutMapping("/AssignCartToCustomer/{cartId}/{username}")
+	public CartDto assignCustomerToCart(@PathVariable Long cartId,@PathVariable String username){
+		return this.cartService.assignCartToCustomer(cartId,username);
+	}
 
+	@PutMapping("/AssignAnonymCartToCustomer/{username}")
+	public CartDto assignCustomerToCart(@RequestHeader("CartToken") String CartToken,@PathVariable String username){
+		return this.cartService.assignAnonymCartToUser(CartToken,username);
+	}
 }
