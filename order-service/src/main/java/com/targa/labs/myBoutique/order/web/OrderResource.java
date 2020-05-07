@@ -1,5 +1,6 @@
 package com.targa.labs.myBoutique.order.web;
 
+import com.targa.labs.myBoutique.commons.dto.AddressDto;
 import com.targa.labs.myBoutique.commons.dto.CartDto;
 import com.targa.labs.myBoutique.commons.dto.OrderDto;
 import com.targa.labs.myBoutique.commons.dto.OrderItemDto;
@@ -27,7 +28,14 @@ public class OrderResource {
 	public OrderDto addProductToOrder(@PathVariable Long orderId,@PathVariable Long productId){
 		return this.orderService.addProductToOrder(orderId,productId);
 	}
-	
+
+	@PutMapping("/UpdAddress/{orderId}")
+	public OrderDto updateOrderAddress(@PathVariable Long orderId,@RequestBody AddressDto address){
+		return this.orderService.updateOrderAddress(orderId, address);
+	}
+
+
+
 	@GetMapping("/{id}")
 	public OrderDto findById(@PathVariable Long id) {return this.orderService.findById(id);
 	}

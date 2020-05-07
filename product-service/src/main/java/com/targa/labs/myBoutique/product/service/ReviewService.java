@@ -42,7 +42,7 @@ public class ReviewService {
 				.orElse(null);
 	}
 	
-	public ReviewDto create(@RequestBody ReviewDto reviewDto) {
+	public ReviewDto create( ReviewDto reviewDto) {
 		return mapToDto(this.reviewRepository.save(
 				new Review(
 						reviewDto.getTitle(),
