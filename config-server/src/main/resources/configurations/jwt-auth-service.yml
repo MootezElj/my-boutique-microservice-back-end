@@ -50,6 +50,9 @@ zuul:
     order-items:
       path: /order-items/**
       url: http://localhost:9991/api/order-items
+    orders:
+      path: /orders/**
+      url: http://localhost:9991/api/orders
 
 
 

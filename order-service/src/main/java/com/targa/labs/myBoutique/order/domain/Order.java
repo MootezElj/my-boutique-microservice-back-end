@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.targa.labs.myBoutique.commons.domain.AbstractEntity;
 import com.targa.labs.myBoutique.order.domain.enumeration.OrderStatus;
 import lombok.*;
+import sun.rmi.runtime.NewThreadAction;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -24,7 +25,7 @@ public class Order extends AbstractEntity{
 	
 	@NotNull
 	@Column (name = "total_price", precision = 10, scale = 2, nullable = false)
-	private BigDecimal totalPrice;
+	private BigDecimal totalPrice=new BigDecimal(0);
 	
 	@NotNull
 	@Enumerated(EnumType.STRING)

@@ -1,7 +1,9 @@
 package com.targa.labs.myBoutique.order.service;
 
+import com.targa.labs.myBoutique.commons.dto.AddressDto;
 import com.targa.labs.myBoutique.commons.dto.CartDto;
 import com.targa.labs.myBoutique.commons.dto.OrderDto;
+import com.targa.labs.myBoutique.order.domain.Address;
 import com.targa.labs.myBoutique.order.domain.Order;
 import com.targa.labs.myBoutique.order.domain.OrderItem;
 import com.targa.labs.myBoutique.order.domain.enumeration.OrderStatus;
@@ -24,7 +26,6 @@ import java.util.stream.Collectors;
 public class OrderService {
 	private final OrderRepository orderRepository;
 	private final OrderItemRepository orderItemRepository;
-
 	public List<OrderDto> findAll() {
 		log.debug("Request to get all Orders");
 		return this.orderRepository.findAll()
@@ -60,6 +61,7 @@ public class OrderService {
 	}
 
 	public OrderDto addProductToOrder(Long orderId,Long productId){
+
 		OrderItem orderItem = this.orderItemRepository.findByProductIdAndOrderId(productId,orderId);
 		Order order=this.orderRepository.findById(orderId).get();
 		if (orderItem!=null){
@@ -86,7 +88,21 @@ public class OrderService {
 						Collections.emptySet(),
 						cart.getId())));
 	}
-	
+
+	public OrderDto updateOrderAddress(Long orderId,AddressDto addressDto){
+		Order order = this.orderRepository.findById(orderId).get();
+		if (order!=null){
+			order.setShipmentAddress(new Address(addressDto.getAddress1(),
+					addressDto.getAddress2()
+					,addressDto.getCity()
+					,addressDto.getPostcode()
+			,addressDto.getCountry()));
+			return this.mapToDto(this.orderRepository.save(order));
+		}
+		return null;
+	}
+
+
 	public void delete(Long id) {
 		log.debug("Request to delete Order : {}", id);
 		this.orderRepository.deleteById(id);
