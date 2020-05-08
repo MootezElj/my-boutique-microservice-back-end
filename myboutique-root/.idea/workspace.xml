@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b037c49-26ae-48e9-9d7a-61d49e990623" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/AddressDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/AddressDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ReviewDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/enumeration/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/enumeration/OrderStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ReviewResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ReviewResource.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../config-server/target/" />
@@ -35,96 +29,12 @@
     <favorites_list name="myboutique-root" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ReviewDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ReviewService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="49" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ReviewResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="40" column="5" selection-start-line="39" selection-start-column="52" selection-end-line="40" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Address.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/service/OrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
-              <folding>
-                <element signature="method#findById#0;class#OrderService#0" />
-                <element signature="method#create#0;class#OrderService#0" />
-                <element signature="method#addProductToOrder#0;class#OrderService#0" />
-                <element signature="method#create#1;class#OrderService#0" />
-                <element signature="method#delete#0;class#OrderService#0" />
-                <element signature="method#mapToDto#0;class#OrderService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/AddressDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="252">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -185,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java" />
         <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ReviewRepository.java" />
         <option value="$PROJECT_DIR$/../config-server/src/main/resources/configurations/customer-service.yml" />
         <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/domain/User.java" />
@@ -230,12 +139,13 @@
         <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/PaymentDto.java" />
         <option value="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" />
         <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderResource.java" />
         <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/AddressDto.java" />
         <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Order.java" />
         <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ReviewDto.java" />
         <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ReviewService.java" />
         <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ReviewResource.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderResource.java" />
+        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/enumeration/OrderStatus.java" />
       </list>
     </option>
   </component>
@@ -274,8 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,6 +230,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -551,6 +461,8 @@
       <workItem from="1588559718231" duration="710000" />
       <workItem from="1588637117681" duration="1157000" />
       <workItem from="1588801592588" duration="3145000" />
+      <workItem from="1588890815286" duration="2680000" />
+      <workItem from="1588899392870" duration="975000" />
     </task>
     <servers />
   </component>
@@ -587,7 +499,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222480000" />
+    <option name="totallyTimeSpent" value="226135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,7 +521,7 @@
       <window_info id="Favorites" order="4" sideWeight="0.50693375" side_tool="true" weight="0.15991472" />
       <window_info id="Learn" order="5" />
       <window_info id="Web" order="6" sideWeight="0.50693375" side_tool="true" weight="0.15991472" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49303135" visible="true" weight="0.20522387" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49303135" visible="true" weight="0.20948827" />
       <window_info id="Structure" order="8" sideWeight="0.5069686" side_tool="true" weight="0.24253732" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -679,17 +591,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/UserPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-          <folding>
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/JwtProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -973,24 +874,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/enumeration/PaymentStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/enumeration/OrderStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1001,10 +888,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderResource.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="40" column="5" selection-start-line="39" selection-start-column="52" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="399">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ReviewService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="49" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1044,35 +938,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Order.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="240">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ReviewDto.java">
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Payment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="441">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ReviewService.java">
+    <entry file="file://$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/domain/enumeration/CartStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="49" selection-end-column="40" />
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/enumeration/OrderStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ReviewResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="294">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ReviewDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
