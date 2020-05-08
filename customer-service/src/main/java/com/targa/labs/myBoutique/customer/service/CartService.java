@@ -1,6 +1,5 @@
 package com.targa.labs.myBoutique.customer.service;
 
-import com.sun.deploy.net.HttpRequest;
 import com.targa.labs.myBoutique.commons.dto.CartDto;
 import com.targa.labs.myBoutique.commons.dto.OrderDto;
 import com.targa.labs.myBoutique.customer.domain.Cart;

@@ -18,264 +18,72 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="myboutique-root" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ReviewDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>connect</find>
-      <find>TESNCAGCA</find>
-      <find>find</find>
-      <find>stream</find>
-      <find>reviews</find>
-      <find>categ</find>
-      <find>hiking</find>
-      <find>h2</find>
-      <find>Request to create Customer</find>
-      <find>Request to create Customer : {}</find>
-      <find>my</find>
-      <find>sq</find>
-      <find>facgq</find>
-      <find>dacs</find>
-      <find>daca</find>
-      <find>jwt</find>
-      <find>JWT</find>
-      <find>createA</find>
-      <find>va</find>
-      <find>Anon</find>
-      <find>Secret</find>
-      <find>client</find>
-      <find>afafsf 3</find>
-      <find>add</find>
-      <find>logi</find>
-      <find>create(</find>
-      <find>addProduc</find>
-      <find>addProduct</find>
-      <find>username</find>
-      <find>create</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Women</replace>
-      <replace>Pant</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>E:\projects\workspaces\my-boutique-workspace\my-boutique-microservice-back-end\jwt-discovery-service</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/repository/ReviewRepository.java" />
-        <option value="$PROJECT_DIR$/../config-server/src/main/resources/configurations/customer-service.yml" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/domain/User.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/CustomerServiceApplication.java" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CustomerDto.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/domain/Customer.java" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/configuration/ServiceConfiguration.java" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/service/UserPrincipalDetailsService.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/repository/CustomerRepository.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/web/CustomerSource.java" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/utils/JwtUtils.java" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/UserDto.java" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/web/UserResource.java" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/dto/UserDto.java" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/service/UserService.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/domain/enumeration/CartStatus.java" />
-        <option value="$PROJECT_DIR$/../order-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/CartDto.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/CustomerService.java" />
-        <option value="$PROJECT_DIR$/../config-server/src/main/resources/configurations/order-service.yml" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Address.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/domain/Cart.java" />
-        <option value="$PROJECT_DIR$/../customer-service/pom.xml" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/JwtAuthorizationFilter.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/utils/TokenProperties.java" />
-        <option value="$PROJECT_DIR$/../jwt-discovery-service/src/main/java/com/labs/targa/auth/security/configuration/SecurityConfiguration.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/OrderDto.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/OrderItem.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/utils/OrderServiceParams.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/OrderServiceClient.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/utils/MyBoutiqueUtils.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/service/OrderItemService.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderItemResource.java" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ProductResource.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/repository/CartRepository.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/CartService.java" />
-        <option value="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/web/CartResourse.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/repository/OrderItemRepository.java" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/PaymentDto.java" />
-        <option value="$PROJECT_DIR$/../config-server/src/main/resources/configurations/jwt-auth-service.yml" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/AddressDto.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/Order.java" />
-        <option value="$PROJECT_DIR$/../myboutique-commons/src/main/java/com/targa/labs/myBoutique/commons/dto/ReviewDto.java" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/service/ReviewService.java" />
-        <option value="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/product/web/ReviewResource.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/web/OrderResource.java" />
-        <option value="$PROJECT_DIR$/../order-service/src/main/java/com/targa/labs/myBoutique/order/domain/enumeration/OrderStatus.java" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="alwaysUpdateSnapshots" value="true" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="jdkForImporter" value="#JAVA_HOME" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="jwt-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="config-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myboutique-commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="config-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myboutique-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="config-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myboutique-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="config-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myboutique-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="config-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myboutique-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="config-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myboutique-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1bRFYvocJTvG9EkTtv2EnS5itm9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../order-service" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.08944544" />
-    <property name="project.structure.side.proportion" value="0.13038906" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../config-server" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.labs.targa.auth.security.configuration" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\projects\workspaces\my-boutique-workspace\my-boutique-microservice-back-end\jwt-discovery-service\src\main\resources" />
-      <recent name="E:\projects\workspaces\my-boutique-workspace\my-boutique-microservice-master\auth-service\src\main\java\com\targa\labs\myBoutique\auth\configuration" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-    <option name="contentProportion" value="0.20833333" />
-  </component>
-  <component name="RunManager" selected="Spring Boot.JwtServiceApplication">
+  <component name="RunManager" selected="Application.ProductServiceApplication">
+    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.CustomerServiceApplication" />
+      <module name="customer-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.targa.labs.myBoutique.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.targa.labs.discoveryService.DiscoveryServiceApplication" />
+      <module name="discovery-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.targa.labs.discoveryService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.labs.targa.auth.JwtServiceApplication" />
+      <module name="jwt-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.labs.targa.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.OrderServiceApplication" />
+      <module name="order-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.targa.labs.myBoutique.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.ProductServiceApplication" />
       <module name="product-service" />
@@ -289,107 +97,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in jwt-discovery-service (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="jwt-discovery-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in product-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="product-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="config-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.targa.labs.myBoutique.configServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.myBoutique.configServer.ConfigServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="customer-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.myBoutique.CustomerServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="discovery-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.discoveryService.DiscoveryServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JwtServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="jwt-discovery-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.labs.targa.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.labs.targa.auth.JwtServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="order-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.myBoutique.OrderServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="product-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.targa.labs.myBoutique.ProductServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.ProductServiceApplication" />
-      <item itemvalue="JUnit.All in jwt-discovery-service (2)" />
-      <item itemvalue="JUnit.All in product-service" />
-      <item itemvalue="Spring Boot.CustomerServiceApplication" />
-      <item itemvalue="Spring Boot.ProductServiceApplication" />
-      <item itemvalue="Spring Boot.OrderServiceApplication" />
-      <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
-      <item itemvalue="Spring Boot.JwtServiceApplication" />
-      <item itemvalue="Spring Boot.ConfigServerApplication" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.JwtServiceApplication" />
-        <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="JUnit.All in product-service" />
         <item itemvalue="Application.ProductServiceApplication" />
-        <item itemvalue="JUnit.All in jwt-discovery-service (2)" />
+        <item itemvalue="Application.JwtServiceApplication" />
+        <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="Application.CustomerServiceApplication" />
+        <item itemvalue="Application.DiscoveryServiceApplication" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpringGeneralSettings">
-    <option name="allowAutoConfigurationMode" value="true" />
-  </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\Mootez\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6b037c49-26ae-48e9-9d7a-61d49e990623" name="Default Changelist" comment="" />
-      <created>1584541368315</created>
+      <changelist id="c52688d6-cd96-4978-9011-41834badd5fe" name="Default Changelist" comment="" />
+      <created>1588587051243</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584541368315</updated>
