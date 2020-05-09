@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b037c49-26ae-48e9-9d7a-61d49e990623" name="Default Changelist" comment="" />
+    <list default="true" id="6b037c49-26ae-48e9-9d7a-61d49e990623" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../config-server/target/" />
     <ignored path="$PROJECT_DIR$/../discovery-service/target/" />
@@ -21,7 +23,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
+  </component>
   <component name="ProjectId" id="1bRFYvocJTvG9EkTtv2EnS5itm9" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +46,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../config-server" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Application.ProductServiceApplication">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -112,7 +144,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c52688d6-cd96-4978-9011-41834badd5fe" name="Default Changelist" comment="" />
+      <changelist id="6b037c49-26ae-48e9-9d7a-61d49e990623" name="Default Changelist" comment="" />
       <created>1588587051243</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -183,6 +215,8 @@
       <workItem from="1588801592588" duration="3145000" />
       <workItem from="1588890815286" duration="2680000" />
       <workItem from="1588899392870" duration="1631000" />
+      <workItem from="1588977715581" duration="48000" />
+      <workItem from="1588978204629" duration="1193000" />
     </task>
     <servers />
   </component>
@@ -219,7 +253,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226791000" />
+    <option name="totallyTimeSpent" value="228032000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -232,7 +266,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
@@ -241,7 +274,7 @@
       <window_info id="Favorites" order="4" sideWeight="0.50693375" side_tool="true" weight="0.15991472" />
       <window_info id="Learn" order="5" />
       <window_info id="Web" order="6" sideWeight="0.50693375" side_tool="true" weight="0.15991472" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49303135" visible="true" weight="0.20948827" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49303135" visible="true" weight="0.21375267" />
       <window_info id="Structure" order="8" sideWeight="0.5069686" side_tool="true" weight="0.24253732" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
