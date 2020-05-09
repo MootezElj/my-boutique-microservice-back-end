@@ -62,7 +62,6 @@ public class ProductServiceApplication implements CommandLineRunner {
 					,1,men_clothing_cat,"","","","");
 			Review r2 = new Review("Title Review 2","Description review 2 3",3l,men_tshirt_zara);
 			this.reviewRepository.save(r2);
-
 		}
 
 		if (false){
@@ -185,7 +184,135 @@ public class ProductServiceApplication implements CommandLineRunner {
 			Review r2 = new Review("Title Review 2","Description review 2 3",3l,men_tshirt_zara);
 			this.reviewRepository.save(r2);
 			}
+
+		if (true){
+
+			//**** Laptops
+			Category laptopCat = this.categoryRepository.findFirstByName("Laptops").get();
+
+			if (laptopCat!=null){
+				Product asus = new Product("Asus ZenBook Flip 15 UX561UA","ordinateur portable de 15 pouces convertible à 360 ° avec processeur Intel® Core™ i7 et écran tactile NanoEdge Full HD",
+						new BigDecimal(999),10,20,ProductStatus.AVAILABLE,1,laptopCat,"","","","");
+
+				Product asus2 = new Product("ASUS ZenBook 15 UX534FA","Le PC portable de 15'' le plus compact avec ScreenPad™ 2.0*",
+						new BigDecimal(750),0,25,ProductStatus.AVAILABLE,1,laptopCat,"","","","");
+
+				Product razor = new Product("Razer Blade Pro 17Inch","Razer Blade Pro (17\" Ecran IPS Full-HD) Portable PC Gaming (Intel i7-7700HQ, 16 Go RAM, 256 Go",
+						new BigDecimal(2000),10,5,ProductStatus.AVAILABLE,1,laptopCat,"","","","");
+
+
+				Product thinkPad = new Product("LENOVO ThinkPad E580","Pc Portable LENOVO ThinkPad E580 i5 8é Gén 8Go 1To (20KS0007FE)",
+						new BigDecimal(1600),5,5,ProductStatus.DISCONTINUED,1,laptopCat,"","","","");
+
+
+				Product alienWare = new Product("Alienware 17 R5 VR Ready 17.3\" LCD Gaming Notebook","Alienware 17 R5 VR Ready 17.3\" LCD Gaming Notebook - Intel Core i7 (8th Gen) i7-8750H Hexa-core (6 Core)",
+						new BigDecimal(999),10,20,ProductStatus.AVAILABLE,1,laptopCat,"","","","");
+
+
+				Product rog = new Product("Asus ROG Zephyrus G14\n","LE MEILLEURDES DEUX MONDES",
+						new BigDecimal(1700),30,20,ProductStatus.AVAILABLE,1,laptopCat,"","","","");
+
+				this.productRepository.saveAll(Arrays.asList(asus,asus2,razor,thinkPad,alienWare,rog));
+
+			}
+			//**** End Laptops
+
+
+			//**** Drones
+			Category droneCat = this.categoryRepository.findFirstByName("Drones").get();
+
+			if(droneCat!=null){
+				Product hubsan = new Product("Hubsan X4 h502s","Hubsan X4 h502s Desire Drone Quadcopter avec GPS – Retour à la Maison",
+						new BigDecimal(109),10,20,ProductStatus.AVAILABLE,1,droneCat,"","","","");
+
+
+				Product potensic  = new Product("Potensic Drone GPS T18","Potensic Drone GPS T18 Hélicoptère FPV Caméra 120° Grand Angle Réglable HD 1080P ",
+						new BigDecimal(119),0,26,ProductStatus.AVAILABLE,1,droneCat,"","","","");
+
+
+				Product mavicAir2 = new Product("DJI mavic air 2","Mavic Air 2 takes power and portability to the next level, offering advanced features in a compact form factor.",
+						new BigDecimal(700),10,20,ProductStatus.AVAILABLE,1,droneCat,"","","","");
+
+
+				Product phantom = new Product("DJI Phantom 4 PRO V2","1” 20 MP CMOS Sensor | 30-min Flight Time Obstacle Sensing in Five Directions",
+						new BigDecimal(899),10,20,ProductStatus.AVAILABLE,1,droneCat,"","","","");
+			}
+			//***** End Drones
+
+
+			//**** Footbal
+			Category footbalCat = this.categoryRepository.findFirstByName("Football").get();
+
+			if(footbalCat!=null) {
+
+				Product ball1 = new Product("NIGHTMATCH Light Up Football", " INCL. BALL PUMP and SPARE BATTERIES - Inside LED lights up when kicked - Glow in the Dark Soccer Ball - Size 5 - Official Size & Weight black/orange",
+						new BigDecimal(9), 0, 20, ProductStatus.AVAILABLE, 1, footbalCat, "", "", "", "");
+
+
+				Product ball2 = new Product("UEFA Champions League Football Size 5 Blue White", "UEFA Champions League Football Size 5 Blue White",
+						new BigDecimal(15), 10, 0, ProductStatus.DISCONTINUED, 1, footbalCat, "", "", "", "");
+
+				Product ball3 = new Product("Barceloa Signature Football", "Barceloa Signature Football",
+						new BigDecimal(14), 5, 20, ProductStatus.AVAILABLE, 1, footbalCat, "", "", "", "");
+
+
+				Product miuline = new Product("miuline Football Goal Nets Heavy Duty Weatherproof", "miuline Football Goal Nets Heavy Duty Weatherproof Durable Sports Replacement Soccer Nets Suitable for Kids Outdoor Garden",
+						new BigDecimal(14), 10, 20, ProductStatus.AVAILABLE, 1, footbalCat, "", "", "", "");
+			}
+				//**** END Footbal
+
+
+
+			//**** Camping
+			Category campingCat = this.categoryRepository.findFirstByName("Camping").get();
+
+			if(campingCat!=null) {
+
+				Product waterContainer = new Product("25 Litre Plastic Water Container", "25 Litre Plastic Water Container - Drum - JERRICAN - 25L Containers - Anti-glug System",
+						new BigDecimal(11), 0, 20, ProductStatus.DISCONTINUED, 1, campingCat, "", "", "", "");
+
+				Product bottledJoyWatter = new Product("BOTTLED JOY Water Bottle with Straw 1 Litre Tritan", "BOTTLED JOY Water Bottle with Straw 1 Litre Tritan BPA Free Leak proof Durable Gym Sports 1000ML Flip Straw School Bottle Dustproof with Marking",
+						new BigDecimal(14), 0, 20, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
+
+
+				Product activeEra = new Product("Active Era® V2 Waterproof 2", "Active Era® V2 Waterproof 2 Person Pop-Up Tent – 100% Storm Tested with",
+						new BigDecimal(54), 10, 20, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
+
+
+				Product amazonBasicTent = new Product("AmazonBasicsTent", "Dome-style, free-standing tent accommodates up to 4 people; works well for 3-season camping",
+						new BigDecimal(59), 0, 25, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
+
+
+				Product pavillo = new Product("Pavillo Airbed Quick Inflation Outdoor Camping Air Mattress", "Double airbed: Ideal for camping in comfort",
+						new BigDecimal(15), 0, 20, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
+
+
+				Product backpack = new Product("G&X Tactical Backpack", "G&X Tactical Backpack, Military Backpack 25L Army Rucksack MOLLE",
+						new BigDecimal(18), 0, 20, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
+
+
+				Product backpack2 = new Product("AmazonBasics Internal Frame Hiking Backpack", "AmazonBasics Internal Frame Hiking Backpack with Rainfly",
+						new BigDecimal(11), 0, 20, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
+
+
+				Product chainsaw = new Product("Pocket Chainsaw with Paracord Handle", "Pocket Chainsaw with Paracord Handle (24inch-11teeth) / (36inch-16teeth) Folding Chain Hand Saw Fast Wood & Tree Cutting Emergency Outdoor Survival Gear Best for Camping Backpacking Hiking Hunting",
+						new BigDecimal(60), 0, 20, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
+
+
+				Product camillus = new Product("Camillus Ravenous", "Camillus Ravenous Tomahawk, with Sheath, 2.75\" / 7 cm Titanium",
+						new BigDecimal(34), 0, 20, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
+
+
+			}
+
+			//**** END Camping
+
+			}
+
+
 		}
+
+
 
 
 	}
