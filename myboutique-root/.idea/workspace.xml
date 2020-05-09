@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c52688d6-cd96-4978-9011-41834badd5fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../customer-service/src/main/java/com/targa/labs/myBoutique/customer/service/CartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +22,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../config-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../product-service" />
   </component>
   <component name="RunManager" selected="Application.ProductServiceApplication">
-    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.configServer.ConfigServerApplication" />
+      <module name="config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.targa.labs.myBoutique.configServer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.CustomerServiceApplication" />
       <module name="customer-service" />
       <extension name="coverage">
@@ -37,7 +51,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscoveryServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.targa.labs.discoveryService.DiscoveryServiceApplication" />
       <module name="discovery-service" />
       <extension name="coverage">
@@ -50,7 +64,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="JwtServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.labs.targa.auth.JwtServiceApplication" />
       <module name="jwt-service" />
       <extension name="coverage">
@@ -63,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.OrderServiceApplication" />
       <module name="order-service" />
       <extension name="coverage">
@@ -76,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.targa.labs.myBoutique.ProductServiceApplication" />
       <module name="product-service" />
       <extension name="coverage">
@@ -89,15 +103,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.ProductServiceApplication" />
-        <item itemvalue="Application.JwtServiceApplication" />
-        <item itemvalue="Application.OrderServiceApplication" />
-        <item itemvalue="Application.CustomerServiceApplication" />
-        <item itemvalue="Application.DiscoveryServiceApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -113,29 +118,74 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="73" key="FileChooserDialogImpl" timestamp="1588587107802">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588895225002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="73" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588587107802" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1588587978797">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588895225002" />
+    <state x="463" y="73" key="FileChooserDialogImpl" timestamp="1589027415274">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588587978797" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1588587978797">
+    <state x="463" y="73" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589027415274" />
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1589031571714">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588587978797" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1588587978796">
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589031571714" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1589031571714">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588587978796" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1588587978797">
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589031571714" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1589031571710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588587978797" />
-    <state x="348" y="68" key="NewModule_or_Project.wizard" timestamp="1588587110624">
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589031571710" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1589031571714">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="348" y="68" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1588587110624" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589031571714" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1589031571714">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589031571714" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1589031571714">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1589031571714" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1589031571714">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1589031571714" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1589031571714">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1589031571714" />
+    <state x="348" y="68" key="NewModule_or_Project.wizard" timestamp="1589027418258">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="348" y="68" key="NewModule_or_Project.wizard/0.0.1366.728@0.0.1366.728" timestamp="1589027418258" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589031117325">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589031117325" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java</url>
+          <line>221</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../product-service/src/main/java/com/targa/labs/myBoutique/ProductServiceApplication.java</url>
+          <line>190</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
