@@ -212,7 +212,7 @@ public class ProductServiceApplication implements CommandLineRunner {
 				Product rog = new Product("Asus ROG Zephyrus G14\n","LE MEILLEURDES DEUX MONDES",
 						new BigDecimal(1700),30,20,ProductStatus.AVAILABLE,1,laptopCat,"","","","");
 
-				this.productRepository.saveAll(Arrays.asList(asus,asus2,razor,thinkPad,alienWare,rog));
+				//this.productRepository.saveAll(Arrays.asList(asus,asus2,razor,thinkPad,alienWare,rog));
 
 			}
 			//**** End Laptops
@@ -236,7 +236,10 @@ public class ProductServiceApplication implements CommandLineRunner {
 
 				Product phantom = new Product("DJI Phantom 4 PRO V2","1” 20 MP CMOS Sensor | 30-min Flight Time Obstacle Sensing in Five Directions",
 						new BigDecimal(899),10,20,ProductStatus.AVAILABLE,1,droneCat,"","","","");
+
+				//this.productRepository.saveAll(Arrays.asList(hubsan,potensic,mavicAir2,phantom));
 			}
+
 			//***** End Drones
 
 
@@ -258,6 +261,7 @@ public class ProductServiceApplication implements CommandLineRunner {
 
 				Product miuline = new Product("miuline Football Goal Nets Heavy Duty Weatherproof", "miuline Football Goal Nets Heavy Duty Weatherproof Durable Sports Replacement Soccer Nets Suitable for Kids Outdoor Garden",
 						new BigDecimal(14), 10, 20, ProductStatus.AVAILABLE, 1, footbalCat, "", "", "", "");
+			//this.productRepository.saveAll(Arrays.asList(ball1,ball2,ball3,miuline));
 			}
 				//**** END Footbal
 
@@ -303,6 +307,7 @@ public class ProductServiceApplication implements CommandLineRunner {
 						new BigDecimal(34), 0, 20, ProductStatus.AVAILABLE, 1, campingCat, "", "", "", "");
 
 
+				//this.productRepository.saveAll(Arrays.asList(waterContainer,bottledJoyWatter,activeEra,amazonBasicTent,pavillo,backpack,backpack2,chainsaw,camillus));
 			}
 
 			//**** END Camping
