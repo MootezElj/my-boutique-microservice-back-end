@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -67,7 +68,23 @@ public class ProductService {
 						)
 				));
 	}
-	
+
+	public List<ProductDto> getTrendingProductsForDepartment(String department){
+		List<Product> products = new ArrayList<>();
+		List<Category> categories =this.categoryRepository.findAllByDepartment_DepName(department);
+		for (int i=0;i<categories.size();i++){
+			products.add(this.productRepository.findAllByCategoryName(categories.get(i).getName()).get(0));
+			products.add(this.productRepository.findAllByCategoryName(categories.get(i).getName()).get(1));
+			// I wanted to just add 2 more products to the list (for the front view to be adequate)
+			if (categories.get(i).getName().equals("Drones"))
+				products.add(this.productRepository.findAllByCategoryName(categories.get(i).getName()).get(2));
+			if (categories.get(i).getName().equals("Laptops"))
+				products.add(this.productRepository.findAllByCategoryName(categories.get(i).getName()).get(2));
+		}
+		return products.stream().map(ProductService::mapToDto)
+				.collect(Collectors.toList());
+	}
+
 	public void delete(Long id) {
 		log.debug("Request to delete Product : {}", id);
 		this.productRepository.deleteById(id);

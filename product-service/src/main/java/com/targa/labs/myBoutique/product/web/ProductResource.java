@@ -1,5 +1,6 @@
 package com.targa.labs.myBoutique.product.web;
 import com.targa.labs.myBoutique.commons.dto.ProductDto;
+import com.targa.labs.myBoutique.product.repository.CategoryRepository;
 import com.targa.labs.myBoutique.product.service.ProductService;
 import lombok.RequiredArgsConstructor;
 
@@ -14,6 +15,7 @@ import java.util.List;
 @RequestMapping(API+"/products")
 public class ProductResource {
 	private final ProductService productService;
+	private final CategoryRepository categoryRepository;
 
 	@GetMapping
 	public List<ProductDto> findAll(){
@@ -40,7 +42,10 @@ public class ProductResource {
 		this.productService.findById(id);
 	}
 
-
+	@GetMapping("/trending/department/{department}")
+	public List<ProductDto> getTrendingProducts(@PathVariable String department){
+		return this.productService.getTrendingProductsForDepartment(department);
+	}
 
 
 }

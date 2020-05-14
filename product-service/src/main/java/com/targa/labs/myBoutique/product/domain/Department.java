@@ -1,10 +1,7 @@
 package com.targa.labs.myBoutique.product.domain;
 
 import com.targa.labs.myBoutique.commons.domain.AbstractEntity;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,8 +10,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
-@EqualsAndHashCode(callSuper = false)
+@Getter
+@Setter
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
