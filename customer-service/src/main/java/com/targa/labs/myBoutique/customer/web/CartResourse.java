@@ -36,7 +36,6 @@ public class CartResourse {
 		return this.cartService.getActiveCart(customerUsername);
 	}
 
-
 	@GetMapping("/{id}")
 	public CartDto findById(@PathVariable Long id) {
 		return this.cartService.findById(id);
