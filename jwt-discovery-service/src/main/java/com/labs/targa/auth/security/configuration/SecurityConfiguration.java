@@ -54,18 +54,69 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 		.addFilter(new JwtAuthenticationFilter(authenticationManager()))
 		.addFilter(new JwtAuthorizationFilter(authenticationManager(),  this.userRepository))
 		.authorizeRequests()
+				//**** Product Service
+				//Product
+				.antMatchers(HttpMethod.POST,"/api/products/**").hasRole("ADMIN")
+				.antMatchers(HttpMethod.DELETE,"/api/products/**").hasRole("ADMIN")
+				.antMatchers(HttpMethod.GET, "/api/products/**").permitAll()
+				//Category
+				.antMatchers(HttpMethod.POST,"/api/categories/**").hasRole("ADMIN")
+				.antMatchers(HttpMethod.DELETE,"/api/categories/**").hasRole("ADMIN")
+				.antMatchers(HttpMethod.GET, "/api/categories/**").permitAll()
+				//Departments
+				.antMatchers(HttpMethod.GET, "/api/departments/**").permitAll()
+				//Reviews
+				.antMatchers(HttpMethod.POST,"/api/reviews/**").hasAnyRole("ADMIN", "CUSTOMER")
+				.antMatchers(HttpMethod.DELETE,"/api/reviews/**").hasRole("ADMIN")
+				.antMatchers(HttpMethod.GET, "/api/reviews/**").permitAll()
+				//**** END Product Service
+
+				//**** Order Service
+				//Orders
+				.antMatchers(HttpMethod.POST,"/api/orders/**").hasAnyRole("ADMIN", "CUSTOMER")
+				.antMatchers(HttpMethod.PUT,"/api/orders/**").authenticated()
+				.antMatchers(HttpMethod.GET, "/api/orders/**").authenticated()
+				.antMatchers(HttpMethod.DELETE,"/api/orders/**").hasRole("ADMIN")
+				//Orders-Items
+				.antMatchers(HttpMethod.POST,"/api/order-items/**").hasAnyRole("ADMIN", "CUSTOMER")
+				.antMatchers(HttpMethod.PUT,"/api/order-items/**").hasAnyRole("ADMIN", "CUSTOMER")
+				.antMatchers(HttpMethod.GET, "/api/order-items/order/**").permitAll()
+				.antMatchers(HttpMethod.GET, "/api/order-items/**").hasAnyRole("ADMIN", "CUSTOMER")
+				.antMatchers(HttpMethod.DELETE,"/api/order-items/**").hasAnyRole("ADMIN", "CUSTOMER")
+				//Payment
+				.antMatchers(HttpMethod.POST,"api/payments/**").hasRole("CUSTOMER")
+				.antMatchers(HttpMethod.GET, "/api/payments/**").hasAnyRole("ADMIN", "CUSTOMER")
+				.antMatchers(HttpMethod.DELETE,"/api/payments/**").hasRole("ADMIN")
+				//**** END Order Service
+
+				//**** Customer Service
+				//Cart
+				.antMatchers(HttpMethod.GET,"/api/carts/Anonym").permitAll()
+				.antMatchers(HttpMethod.GET,"/api/carts/customer/**").hasAnyRole("ADMIN","CUSTOMER")
+				.antMatchers(HttpMethod.GET,"/api/carts/{id}").hasAnyRole("ADMIN","CUSTOMER")
+				.antMatchers(HttpMethod.GET,"/api/carts/").hasRole("ADMIN")
+				.antMatchers(HttpMethod.POST,"/api/carts/**").permitAll()
+				.antMatchers(HttpMethod.PUT,"/api/carts/AddProduct/{productId}").permitAll()
+				.antMatchers(HttpMethod.PUT,"/api/carts/AssignCartToCustomer/**").hasRole("CUSTOMER")
+				.antMatchers(HttpMethod.PUT,"/api/carts/AssignAnonymCartToCustomer/**").hasRole("CUSTOMER")
+				.antMatchers(HttpMethod.PUT,"/api/carts/**").hasAnyRole("CUSTOMER","ADMIN")
+				.antMatchers(HttpMethod.DELETE,"/api/carts/**").hasRole("ADMIN")
+				//Customer
+				.antMatchers(HttpMethod.POST,"/api/customers/**").permitAll()
+				.antMatchers(HttpMethod.PUT,"/api/customers/**").authenticated()
+				.antMatchers(HttpMethod.GET, "/api/customers/**").hasRole("ADMIN")
+				.antMatchers(HttpMethod.DELETE,"/api/customers/**").hasRole("ADMIN")
+				//**** END Customer Service
+
+				//login
 				.antMatchers(HttpMethod.POST, "/login").permitAll()
-				.antMatchers(HttpMethod.GET, "/api/products").permitAll()
 				.antMatchers(HttpMethod.GET, "/jwt/currentUser").authenticated()
-				.antMatchers(HttpMethod.GET, "/jwt/test").permitAll()
 				.antMatchers(HttpMethod.GET, "/jwt/register-customer").permitAll()
 
-		//login
+
 		;
 		
 	}
-
-
 
 	@Bean
 	DaoAuthenticationProvider authenticationProvider() {
