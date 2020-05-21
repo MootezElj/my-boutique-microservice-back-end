@@ -40,6 +40,11 @@ public class ProductResource {
 		this.productService.findById(id);
 	}
 
+	@GetMapping("/trending/department/{department}")
+	public List<ProductDto> getTrendingProducts(@PathVariable String department){
+		return this.productService.getTrendingProductsForDepartment(department);
+	}
+
 
 
 
