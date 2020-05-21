@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 30, 2020 at 11:05 AM
+-- Generation Time: May 21, 2020 at 12:29 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -38,9 +38,9 @@ CREATE TABLE IF NOT EXISTS `hibernate_sequence` (
 --
 
 INSERT INTO `hibernate_sequence` (`next_val`) VALUES
-(82),
-(82),
-(82);
+(162),
+(162),
+(162);
 
 -- --------------------------------------------------------
 
@@ -72,8 +72,13 @@ CREATE TABLE IF NOT EXISTS `orders` (
 --
 
 INSERT INTO `orders` (`id`, `created_date`, `last_modified_date`, `cart_id`, `city`, `address_1`, `address_2`, `country`, `postcode`, `shipped`, `status`, `total_price`, `payment_id`) VALUES
-(58, '2020-04-27 22:52:49', '2020-04-27 22:52:49', 84, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL),
-(60, '2020-04-27 23:01:22', '2020-04-27 23:01:22', 86, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL);
+(152, '2020-05-21 00:15:38', '2020-05-21 00:15:38', 111, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL),
+(149, '2020-05-21 00:14:32', '2020-05-21 00:14:32', 109, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL),
+(151, '2020-05-21 00:15:06', '2020-05-21 00:15:06', 110, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL),
+(148, '2020-05-21 00:14:04', '2020-05-21 00:14:04', 108, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL),
+(154, '2020-05-21 00:16:53', '2020-05-21 00:16:53', 112, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL),
+(156, '2020-05-21 00:17:27', '2020-05-21 00:17:27', 113, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL),
+(159, '2020-05-21 00:23:36', '2020-05-21 00:23:36', 114, NULL, NULL, NULL, NULL, NULL, NULL, 'CREATION', '0.00', NULL);
 
 -- --------------------------------------------------------
 
@@ -92,16 +97,6 @@ CREATE TABLE IF NOT EXISTS `order_item` (
   PRIMARY KEY (`id`),
   KEY `FKt4dc2r9nbvbujrljv3e23iibt` (`order_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
---
--- Dumping data for table `order_item`
---
-
-INSERT INTO `order_item` (`id`, `created_date`, `last_modified_date`, `product_id`, `quantity`, `order_id`) VALUES
-(81, '2020-04-30 00:43:56', '2020-04-30 00:43:56', 67, 1, 60),
-(77, '2020-04-30 00:28:19', '2020-04-30 00:28:19', 31, 3, 60),
-(79, '2020-04-30 00:28:20', '2020-04-30 00:28:20', 30, 2, 60),
-(80, '2020-04-30 00:37:29', '2020-04-30 00:37:29', 32, 2, 60);
 
 -- --------------------------------------------------------
 

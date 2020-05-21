@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 30, 2020 at 11:04 AM
+-- Generation Time: May 21, 2020 at 12:29 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -40,14 +40,6 @@ CREATE TABLE IF NOT EXISTS `cart` (
   KEY `FKdebwvad6pp1ekiqy5jtixqbaj` (`customer_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`id`, `created_date`, `last_modified_date`, `order_id`, `status`, `customer_id`) VALUES
-(84, '2020-04-27 22:52:49', '2020-04-27 22:52:49', 58, 'NEW', NULL),
-(86, '2020-04-27 23:01:22', '2020-04-27 23:01:22', 60, 'NEW', NULL);
-
 -- --------------------------------------------------------
 
 --
@@ -75,7 +67,8 @@ CREATE TABLE IF NOT EXISTS `customer` (
 INSERT INTO `customer` (`id`, `created_date`, `last_modified_date`, `email`, `enabled`, `first_name`, `last_name`, `username`, `phone`) VALUES
 (1, '2020-04-10 23:29:56', '2020-04-10 23:29:56', 'admin@gmail.com', b'1', 'Mootez', 'Elj', 'admin', '51906322'),
 (24, '2020-04-15 10:57:05', '2020-04-15 10:57:05', 'Test3@gfaa', b'1', 'Test3', 'Test3', 'Test3', ''),
-(26, '2020-04-15 11:03:05', '2020-04-15 11:03:05', 'Test1@fasf', b'1', 'Test1', 'Test1', 'Test1', '');
+(26, '2020-04-15 11:03:05', '2020-04-15 11:03:05', 'Test1@fasf', b'1', 'Test1', 'Test1', 'Test1', ''),
+(107, '2020-05-21 00:04:54', '2020-05-21 00:04:54', 'eljmootez@gmail.com', b'1', 'Mootez', 'ELJ', 'mootezElj', '');
 
 -- --------------------------------------------------------
 
@@ -93,8 +86,8 @@ CREATE TABLE IF NOT EXISTS `hibernate_sequence` (
 --
 
 INSERT INTO `hibernate_sequence` (`next_val`) VALUES
-(87),
-(87);
+(115),
+(115);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
