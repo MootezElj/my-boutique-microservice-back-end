@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 21, 2020 at 12:29 AM
+-- Generation Time: Apr 30, 2020 at 11:36 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.2.14
 
@@ -38,8 +38,7 @@ CREATE TABLE IF NOT EXISTS `hibernate_sequence` (
 --
 
 INSERT INTO `hibernate_sequence` (`next_val`) VALUES
-(11),
-(1);
+(10);
 
 -- --------------------------------------------------------
 
@@ -67,7 +66,7 @@ INSERT INTO `user` (`id`, `active`, `email`, `password`, `permissions`, `roles`,
 (1, b'1', 'user@gmail.com', '$2a$10$0p3hL42Nhvy2mg1Zykvd1OZ.zHuswgJC3NYOaIOTwnzwJfCFXeR6S', '', 'USER', 'user'),
 (2, b'1', 'admin@gmail.com', '$2a$10$4HLseWBbdd2pJrT5AupG1euoA5LVA2UpB2eQqR7iSOUu2D.QkWNGy', 'ACCESS_TEST1,ACCESS_TEST2', 'ADMIN', 'admin'),
 (3, b'1', 'manager@gmail.com', '$2a$10$IBIVVLBeDqHrz/H6cFKkmu1keyjURAHqkvtn8abr.RnysdwpclQXy', 'ACCESS_TEST1', 'MANAGER', 'manager'),
-(10, b'1', 'eljmootez@gmail.com', '$2a$10$6KWaKzkD7ytkcFJbm6cdHOrY6Gfuj0zPIa/vMetC8JzrPVyMnSqX.', '', 'CUSTOMER', 'mootezElj');
+(9, b'1', 'Test1@fasf', '$2a$10$qv0tsIQvzoRO3Z/nDelGzevZr2qHjNTEr2kza9Gv0khEpOCdgl4gu', '', 'CUSTOMER', 'Test1');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
