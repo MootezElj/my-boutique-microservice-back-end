@@ -185,7 +185,7 @@ public class ProductServiceApplication implements CommandLineRunner {
 			this.reviewRepository.save(r2);
 			}
 
-		if (true){
+		if (false){
 
 			//**** Laptops
 			Category laptopCat = this.categoryRepository.findFirstByName("Laptops").get();
